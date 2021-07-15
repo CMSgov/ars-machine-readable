@@ -6,10 +6,10 @@ This is the Centers for Medicare & Medicaid Services Compliance as Code reposito
 
 CMS believes compliance activity at scale require automation to be successful and repeatable. Compliance as Code standards like OSCAL allow teams to bridge between the "Governance" layer and operational tools.  
 
-## About ARS ##
-The goal of the Acceptable Risk safeguards is to define a baseline of minimum information security and privacy assurance controls. These controls are based on both internal CMS governance documents and laws, regulations, and other authorities created by institutions external to CMS. 
+## What are ARS ##
+ARS are the Acceptable Risk safeguards used to define a baseline of minimum information security and privacy assurance controls at CMS. These controls are based on both internal CMS governance documents and laws, regulations, and other authorities created by institutions external to CMS. 
 
-Protecting and ensuring the confidentiality, integrity, and availability for all of CMS’ information and information systems is the primary purpose of the information security and privacy assurance program. The ARS complies with the CMS IS2P26 by providing a defense-in-depth security structure along with a least-privilege, need-to-know basis for all information access. 
+Protecting and ensuring the confidentiality, integrity, and availability for all of CMS’ information and information systems is the primary purpose of the information security and privacy assurance program. The ARS complies with the CMS guidelines by providing a defense-in-depth security structure along with a least-privilege, need-to-know basis for all information access. 
 
 ## Using ##
 Confirm you're using the latest version of the ARS controls. 
