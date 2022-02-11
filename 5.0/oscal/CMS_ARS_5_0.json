@@ -1,9 +1,9 @@
 {
   "catalog": {
-    "uuid": "e36cb340-c74c-4405-8b20-8d5a75fbd2d6",
+    "uuid": "170cc3ca-31a8-4021-be10-d26c02517fd5",
     "metadata": {
       "title": "ARS 5.0",
-      "last-modified": "2022-02-11 12:25:03.715466-06:00",
+      "last-modified": "2022-02-11 13:09:45.877476-06:00",
       "version": "1.0",
       "oscal-version": "1.0.0"
     },
@@ -4712,7 +4712,11 @@
                 "rel": "related"
               },
               {
-                "href": "#MP-6 SC-13",
+                "href": "#MP-6",
+                "rel": "related"
+              },
+              {
+                "href": "#SC-13",
                 "rel": "related"
               }
             ],
@@ -11557,7 +11561,7 @@
                 "rel": "related"
               },
               {
-                "href": "#MP- 2",
+                "href": "#MP-2",
                 "rel": "related"
               },
               {
@@ -16584,7 +16588,7 @@
             ],
             "links": [
               {
-                "href": "#FISCAM: CM-3.1.1",
+                "href": "#CM-3.1.1",
                 "rel": "related"
               },
               {
@@ -19347,7 +19351,35 @@
             ],
             "links": [
               {
-                "href": "#FedRAMP: Rev. 4 Baseline; \nNIST SP: 800-128;",
+                "href": "#CM-2",
+                "rel": "related"
+              },
+              {
+                "href": "#CM-3",
+                "rel": "related"
+              },
+              {
+                "href": "#CM-4",
+                "rel": "related"
+              },
+              {
+                "href": "#CM-5",
+                "rel": "related"
+              },
+              {
+                "href": "#CM-8",
+                "rel": "related"
+              },
+              {
+                "href": "#PL-2",
+                "rel": "related"
+              },
+              {
+                "href": "#SA-10",
+                "rel": "related"
+              },
+              {
+                "href": "#SI-12;",
                 "rel": "related"
               }
             ],
@@ -32325,7 +32357,11 @@
             ],
             "links": [
               {
-                "href": "#AC-3. MP-2",
+                "href": "#AC-3.",
+                "rel": "related"
+              },
+              {
+                "href": "#MP-2",
                 "rel": "related"
               }
             ],
@@ -35720,12 +35756,6 @@
                 "value": "pe-19(01)"
               }
             ],
-            "links": [
-              {
-                "href": "#[FIPS 199].",
-                "rel": "related"
-              }
-            ],
             "parts": [
               {
                 "id": "pe-19.1_smt",
@@ -38399,7 +38429,11 @@
                 "rel": "related"
               },
               {
-                "href": "#8809 MP-1",
+                "href": "#8809",
+                "rel": "related"
+              },
+              {
+                "href": "#MP-1",
                 "rel": "related"
               },
               {
@@ -38459,7 +38493,11 @@
                 "rel": "related"
               },
               {
-                "href": "#8810 RA-9",
+                "href": "#8810",
+                "rel": "related"
+              },
+              {
+                "href": "#RA-9",
                 "rel": "related"
               },
               {
@@ -42920,7 +42958,7 @@
             ],
             "links": [
               {
-                "href": "#All XX-1 Controls",
+                "href": "#All-01-Controls",
                 "rel": "related"
               },
               {
@@ -46572,7 +46610,15 @@
             ],
             "links": [
               {
-                "href": "#PM-9; PS-8; SA-8",
+                "href": "#PM-9;",
+                "rel": "related"
+              },
+              {
+                "href": "#PS-8;",
+                "rel": "related"
+              },
+              {
+                "href": "#SA-8",
                 "rel": "related"
               },
               {
@@ -46731,7 +46777,15 @@
                 "rel": "related"
               },
               {
-                "href": "#PM-11; PL-7; SA-9",
+                "href": "#PM-11;",
+                "rel": "related"
+              },
+              {
+                "href": "#PL-7;",
+                "rel": "related"
+              },
+              {
+                "href": "#SA-9",
                 "rel": "related"
               },
               {
@@ -51166,7 +51220,11 @@
                 "rel": "related"
               },
               {
-                "href": "#SA-8; MA-6",
+                "href": "#SA-8;",
+                "rel": "related"
+              },
+              {
+                "href": "#MA-6",
                 "rel": "related"
               },
               {
@@ -56776,10 +56834,6 @@
               {
                 "href": "#SC-12",
                 "rel": "related"
-              },
-              {
-                "href": "#",
-                "rel": "related"
               }
             ],
             "parts": [
@@ -61085,7 +61139,11 @@
                 "rel": "related"
               },
               {
-                "href": "#SI-7 SI-11",
+                "href": "#SI-7",
+                "rel": "related"
+              },
+              {
+                "href": "#SI-11",
                 "rel": "related"
               }
             ],
