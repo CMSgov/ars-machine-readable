@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="https://raw.githubusercontent.com/usnistgov/OSCAL/release-1.0/xml/schema/oscal_complete_schema.xsd" schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema"?>
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
+         uuid="9130b9a9-2fa1-4c51-89d5-7fa282cabf73">
+   <metadata>
+      <title>CMS Acceptable Risk Safeguards 5.0</title>
+      <last-modified>2022-03-02T00:27:00.08654-05:00</last-modified>
+      <version>5.0</version>
+      <oscal-version>1.0.0</oscal-version>
+      <role id="creator">
+         <title>Document creator</title>
+      </role>
+      <role id="contact">
+         <title>Contact</title>
+      </role>
+      <party type="organization" uuid="b06b4a6e-1551-4b9b-a478-279352893171">
+         <name>Office of Information Technology Information Security &amp; Privacy Group</name>
+         <email-address>ciso@cms.hhs.gov</email-address>
+         <address>
+            <addr-line>U.S. Centers for Medicare &amp; Medicaid Services</addr-line>
+            <addr-line>Attn: Information Security &amp; Privacy Group</addr-line>
+            <addr-line>7500 Security Boulevard,</addr-line>
+            <city>Baltimore</city>
+            <state>MD</state>
+            <postal-code>21244</postal-code>
+         </address>
+      </party>
+      <responsible-party role-id="creator">
+         <party-uuid>b06b4a6e-1551-4b9b-a478-279352893171</party-uuid>
+      </responsible-party>
+      <responsible-party role-id="contact">
+         <party-uuid>b06b4a6e-1551-4b9b-a478-279352893171</party-uuid>
+      </responsible-party>
+   </metadata>
+   <import href="https://raw.githubusercontent.com/usnistgov/oscal-content/8cf06306741f745740da65bc52d8c67adba23da8/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml">
+      <include-all/>
+   </import>
+   <merge>
+      <combine method="keep"/>
+      <as-is>true</as-is>
+   </merge>
+   <back-matter/>
+</profile>
