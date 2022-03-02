@@ -1,0 +1,3 @@
+[submodule "vendor/oscal"]
+	path = vendor/oscal
+	url = https://github.com/usnistgov/OSCAL.git
