@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "ars-xlsx-oscal-json"
+version = "0.1.0"
+description = "Convert ARS .xlsx spreadsheet into OSCAL JSON"
+authors = ["Fen Labalme <fen@civicactions.com>"]
+license = "GNU General Public Licence v3"
+
+[tool.poetry.dependencies]
+python = "^3.8"
+click = "^7.1.2"
+openpyxl = "^3.0.10"
+compliance-trestle = "^1.1.0"
+complianceio = {git = "https://github.com/CivicActions/compliance-io.git", rev = "main"}
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
