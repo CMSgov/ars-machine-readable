@@ -1,0 +1,20 @@
+{
+    "family": 0,
+    "control_id": 1,
+    "name": 2,
+    "control": 3,
+    "implementation": 5,
+    "responsiblity": 6,
+    "review_frequency": 7,
+    "assessment_frequency": 8,
+    "baseline": 9,
+    "discussion": 10,
+    "priority": 11,
+    "related": 12,
+    "reference": 13,
+    "privacy_standards": 14,
+    "privacy_discussion": 15,
+    "hva_statement": 16,
+    "hva_standards": 17,
+    "hva_discussion": 18
+}
