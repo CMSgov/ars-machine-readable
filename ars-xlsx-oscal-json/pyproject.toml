@@ -7,7 +7,7 @@ license = "GNU General Public Licence v3"
 
 [tool.poetry.dependencies]
 python = "^3.8"
-click = "^7.1.2"
+click = ">=7.1.2"
 openpyxl = "^3.0.10"
 compliance-trestle = "^1.1.0"
 complianceio = {git = "https://github.com/CivicActions/compliance-io.git", rev = "main"}
