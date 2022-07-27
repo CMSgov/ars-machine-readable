@@ -1,0 +1,5 @@
+# macOS noise
+*.DS_Store
+
+# OxygenXML project files
+*.xpr
