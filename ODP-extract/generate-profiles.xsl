@@ -55,7 +55,7 @@
                         <xsl:for-each select="$template//row">
                             <xsl:choose>
                                 <xsl:when test="$c eq 'Low'">
-                                    <xsl:message>{ODP_ID}</xsl:message>
+                                    <!--<xsl:message>{ODP_ID}</xsl:message>-->
                                     <xsl:if test="Low ne ''">
                                         <set-parameter class="ODP" param-id="{ODP_ID}">
                                             <value>{normalize-space(Low)}</value>
@@ -63,7 +63,7 @@
                                     </xsl:if>
                                 </xsl:when>
                                 <xsl:when test="$c eq 'Moderate'">
-                                    <xsl:message>{ODP_ID}</xsl:message>
+                                    <!--<xsl:message>{ODP_ID}</xsl:message>-->
                                     <xsl:if test="Moderate ne ''">
                                         <set-parameter class="ODP" param-id="{ODP_ID}">
                                             <value>{normalize-space(Moderate)}</value>
@@ -71,7 +71,7 @@
                                     </xsl:if>
                                 </xsl:when>
                                 <xsl:when test="$c eq 'High'">
-                                    <xsl:message>{ODP_ID}</xsl:message>
+                                    <!--<xsl:message>{ODP_ID}</xsl:message>-->
                                     <xsl:if test="High ne ''">
                                         <set-parameter class="ODP" param-id="{ODP_ID}">
                                             <value>{normalize-space(High)}</value>

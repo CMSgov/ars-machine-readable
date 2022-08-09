@@ -4,8 +4,8 @@
          uuid="4d6b984c-404b-49b7-b9a1-8469937f555c">
    <metadata>
       <title>CMS ARS 5.0 Moderate Profile</title>
-      <last-modified>2022-07-28T12:58:18.110487Z</last-modified>
-      <version>2022-07-28T12:58:18.110487Z</version>
+      <last-modified>2022-08-09T11:27:41.94108Z</last-modified>
+      <version>2022-08-09T11:27:41.94108Z</version>
       <oscal-version>1.0.4</oscal-version>
    </metadata>
    <import href="ars-5.0-catalog.xml"><!-- 287 controls-->
@@ -300,6 +300,9 @@
       </include-controls>
    </import>
    <modify>
+      <set-parameter class="ODP" param-id="ac-1_prm_1">
+         <value>applicable personnel and roles</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="ac-1_prm_2">
          <value>CMS Enterprise-level</value>
       </set-parameter>
@@ -310,7 +313,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-1_prm_6">
          <value>at least every one (1) year</value>
@@ -385,10 +388,10 @@
          <value>CMS -defined security functions (deployed in hardware, software, and firmware)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-6.1_prm_3">
-         <value>Setting/modifying audit logs and auditing behavior; Setting/modifying boundary protection system rules; Configuring/modifying access authorizations (i.e., permissions, privileges); Setting/modifying authentication parameters; and Setting/modifying system configurations and parameters.</value>
+         <value>Setting/modifying audit logs and auditing behavior; Setting/modifying boundary protection system rules; Configuring/modifying access authorizations (i.e., permissions, privileges); Setting/modifying authentication parameters; and Setting/modifying system configurations and parameters</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-6.2_prm_1">
-         <value>Setting/modifying audit logs and auditing behavior; Setting/modifying boundary protection system rules; Configuring/modifying access authorizations (i.e., permissions, privileges); Setting/modifying authentication parameters; and Setting/modifying system configurations and parameters.</value>
+         <value>Setting/modifying audit logs and auditing behavior; Setting/modifying boundary protection system rules; Configuring/modifying access authorizations (i.e., permissions, privileges); Setting/modifying authentication parameters; and Setting/modifying system configurations and parameters</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-6.5_prm_1">
          <value>personnel or roles (defined in applicable security and privacy plans)</value>
@@ -481,7 +484,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="at-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="at-1_prm_6">
          <value>at least every one (1) year</value>
@@ -532,7 +535,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-1_prm_6">
          <value>at least every one (1) year</value>
@@ -544,7 +547,7 @@
          <value>List of auditable events: (a) Server alerts and error messages; (b) User log-on and log-off (successful or unsuccessful); (c) All system administration activities; (d) Modification of privileges and access; (e) Start up and shut down; (f) Application modifications; (g) Application alerts and error messages; (h) Configuration changes; (i) Account creation, modification, or deletion; (j) File creation and deletion; (k) Read access to sensitive information; (l) Modification to sensitive information; (m) Printing sensitive information; (n) Anomalous (e.g., non-attributable) activity; (o) Data as required for privacy monitoring privacy controls; (p) Concurrent log on from different work stations; (q) Override of access control mechanisms; and (r) Process creation. Std.2 - Subset of Implementation Standard 1 auditable events: (a) User log-on and log-off (successful or unsuccessful); (b) Configuration changes; (c) Application alerts and error messages; (d) All system administration activities; (e) Modification of privileges and access; (f) Account creation, modification, or deletion; (g) Concurrent log on from different work stations; and (h) Override of access control mechanisms. Std.3 - Verify that proper logging is enabled to audit administrator activities. Std.4 - Information collected will be compliant with the Federal Rules of Evidence. Std. 5 - The organization reviews and updates the list of auditable events at least every three hundred sixty-five (365) days and whenever there is a change in the threat environment</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-2_prm_2">
-         <value>(a) User log-on and log-off (successful or unsuccessful); (b) Configuration changes; (c) Application alerts and error messages; (d) All system administration activities; (e) Modification of privileges and access; (f) Account creation, modification, or deletion; (g) Concurrent log on from different work stations; and (h) Override of access control mechanisms.</value>
+         <value>(a) User log-on and log-off (successful or unsuccessful); (b) Configuration changes; (c) Application alerts and error messages; (d) All system administration activities; (e) Modification of privileges and access; (f) Account creation, modification, or deletion; (g) Concurrent log on from different work stations; and (h) Override of access control mechanisms</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-2_prm_3">
          <value>no less often than every three hundred sixty-five (365) days and whenever there is a significant system modification</value>
@@ -553,7 +556,7 @@
          <value>identified in the privacy risk assessment</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-4_prm_1">
-         <value>Capacity must be sufficient to handle auditing records during peak performance times (e.g., open enrollment).</value>
+         <value>Capacity must be sufficient to handle auditing records during peak performance times (e.g., open enrollment)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-5_prm_1">
          <value>defined in the applicable system security and privacy plan</value>
@@ -580,7 +583,7 @@
          <value>defined in the applicable system security and privacy plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-8_prm_1">
-         <value>accurate to within one hundred (100) milliseconds.</value>
+         <value>accurate to within one hundred (100) milliseconds</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-9_prm_1">
          <value>defined in the applicable system security and privacy plan</value>
@@ -610,7 +613,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ca-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ca-1_prm_6">
          <value>at least every one (1) year</value>
@@ -655,7 +658,7 @@
          <value>system components or classes of components (defined in the applicable system security and privacy plan)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ca-9_prm_2">
-         <value>Terminate internal system connections upon issuance of an order by the CMS CIO, CISO, or Senior Official for Privacy (SOP) and when such internal system connections no longer support CMS missions or business functions.</value>
+         <value>Terminate internal system connections upon issuance of an order by the CMS CIO, CISO, or Senior Official for Privacy (SOP) and when such internal system connections no longer support CMS missions or business functions</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ca-9_prm_3">
          <value>365 days</value>
@@ -673,7 +676,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-1_prm_6">
          <value>at least every one (1) year</value>
@@ -697,7 +700,7 @@
          <value>stringent configurations (e.g., FIPS 140-2 compliant encryption)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-2.7_prm_3">
-         <value>security safeguards to systems, system components, or devices (e.g., detailed inspection and examination of the device (GFE) for physical tampering, purging or reimaging the hard disk drive/removable media) when the individuals return from travel.</value>
+         <value>security safeguards to systems, system components, or devices (e.g., detailed inspection and examination of the device (GFE) for physical tampering, purging or reimaging the hard disk drive/removable media) when the individuals return from travel</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-3_prm_1">
          <value>no less than twelve (12) months after the change</value>
@@ -721,7 +724,7 @@
          <value>defined in the applicable system security and privacy plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-6_prm_1">
-         <value>Use of HHS and CMS approved Operating System (OS) (a) HHS-specific minimum security configurations must be used for the following OS and Applications: 1. HHS approved USGCB Windows Standards (e.g., Microsoft supported versions only); and 2. Blackberry Server - Websense. (b) For all other OS’s and applications, and to resolve configuration conflicts among multiple security guidelines, the CMS hierarchy for implementing security configuration guidelines is: 1. USGCB; 2. NIST NCP; Tier IV, then Tier III, Tier II, and Tier I, in descending order; 3. Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIG); 4. National Security Agency (NSA) STIGs; 5. If formal government-authored checklists do not exist, then organizations are encouraged to use vendor or industry group (such as The Center for Internet Security [CIS]) checklists. 6. In situations where no guidance exists, coordinate with CMS for guidance. CMS must collaborate within CMS and the HHS Cybersecurity Program, and other organizations through the HHS Continuous Monitoring and Risk Scoring (CMRS) working group to: - Establish baseline configurations and communicate industry and vendor best practices; and - Ensure deployed configurations are supported for security updates. 7. All deviations from existing USGCB, NCP, DISA and/or NSA configurations must be documented.</value>
+         <value>Use of HHS and CMS approved Operating System (OS) (a) HHS-specific minimum security configurations must be used for the following OS and Applications: 1. HHS approved USGCB Windows Standards (e.g., Microsoft supported versions only); and 2. Blackberry Server - Websense. (b) For all other OS’s and applications, and to resolve configuration conflicts among multiple security guidelines, the CMS hierarchy for implementing security configuration guidelines is: 1. USGCB; 2. NIST NCP; Tier IV, then Tier III, Tier II, and Tier I, in descending order; 3. Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIG); 4. National Security Agency (NSA) STIGs; 5. If formal government-authored checklists do not exist, then organizations are encouraged to use vendor or industry group (such as The Center for Internet Security [CIS]) checklists. 6. In situations where no guidance exists, coordinate with CMS for guidance. CMS must collaborate within CMS and the HHS Cybersecurity Program, and other organizations through the HHS Continuous Monitoring and Risk Scoring (CMRS) working group to: - Establish baseline configurations and communicate industry and vendor best practices; and - Ensure deployed configurations are supported for security updates. 7. All deviations from existing USGCB, NCP, DISA and/or NSA configurations must be documented</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-6_prm_2">
          <value>system components</value>
@@ -745,7 +748,7 @@
          <value>policies, rules of behavior, and/or access agreements regarding software program usage and restrictions&gt;; rules authorizing the terms and conditions of software program usage</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-7.2_prm_2">
-         <value>Software must be legally licensed; Software must be provisioned in approved configurations; and Users must be authorized for software program use.</value>
+         <value>Software must be legally licensed; Software must be provisioned in approved configurations; and Users must be authorized for software program use</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-7.5_prm_1">
          <value>software programs (defined in the applicable security and privacy plan) authorized to execute on the system</value>
@@ -805,7 +808,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cp-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cp-1_prm_6">
          <value>at least every one (1) year</value>
@@ -820,7 +823,7 @@
          <value>ISSO, Business Owner, Contingency Plan Coordinator (CPC), and other stakeholders identified within the applicable system's contingency plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cp-2_prm_3">
-         <value>within every three hundered sixty-five (365) days.</value>
+         <value>within every three hundered sixty-five (365) days</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cp-2_prm_4">
          <value>ISSO, Business Owner, Contingency Plan Coordinator (CPC), and other stakeholders identified within the applicable system's contingency plan</value>
@@ -838,10 +841,10 @@
          <value>ninety (90) days</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cp-3_prm_2">
-         <value>Within ninety (90) days of assuming a contingency role or responsibility; When required by system changes; and Within every three hundred sixty-five (365) days thereafter.</value>
+         <value>Within ninety (90) days of assuming a contingency role or responsibility; When required by system changes; and Within every three hundred sixty-five (365) days thereafter</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cp-3_prm_3">
-         <value>within every three hundered sixty-five (365) days.</value>
+         <value>within every three hundered sixty-five (365) days</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cp-3_prm_4">
          <value>When required by system changes</value>
@@ -898,7 +901,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ia-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ia-1_prm_6">
          <value>at least every one (1) year</value>
@@ -961,7 +964,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ir-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ir-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1030,7 +1033,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ma-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ma-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1072,7 +1075,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="mp-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="mp-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1135,7 +1138,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pe-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pe-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1246,7 +1249,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pl-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pl-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1363,7 +1366,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ps-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ps-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1426,7 +1429,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pt-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pt-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1462,7 +1465,7 @@
          <value>at times prescribed by law</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pt-5_prm_2">
-         <value>Ability to access and have PII amended or corrected if and when necessary.</value>
+         <value>Ability to access and have PII amended or corrected if and when necessary</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pt-6.1_prm_1">
          <value>every 3 years</value>
@@ -1486,7 +1489,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ra-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ra-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1555,7 +1558,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1579,7 +1582,7 @@
          <value>security-relevant external system interfaces , purpose and use of all such interfaces; source code or hardware schematics; and high-level design documentation</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-4.2_prm_3">
-         <value>sufficient detail to prove the security control implementation.</value>
+         <value>sufficient detail to prove the security control implementation</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-5_prm_1">
          <value>System documentation</value>
@@ -1588,7 +1591,7 @@
          <value>System owners, system security officers, and system administrators</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-8_prm_1">
-         <value>Principles will remain consistent with the CMS Target Life Cycle, Technical Reference Architecture, and Technical Review Board processes defined by CMS.</value>
+         <value>Principles will remain consistent with the CMS Target Life Cycle, Technical Reference Architecture, and Technical Review Board processes defined by CMS</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-8.33_prm_1">
          <value>techniques defined by the CMS Privacy Office</value>
@@ -1600,16 +1603,16 @@
          <value>processes, methods, and techniques defined in the applicable security and privacy plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-9.2_prm_1">
-         <value>as defined in the applicable system security plan.</value>
+         <value>as defined in the applicable system security plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-10_prm_1">
-         <value>: design; development; implementation; and operation.</value>
+         <value>: design; development; implementation; and operation</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-10_prm_2">
          <value>defined in the applicable systems security plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-10_prm_3">
-         <value>as defined in the applicable system security plan.</value>
+         <value>as defined in the applicable system security plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-11_prm_1">
          <value>unit; integration; system; regression</value>
@@ -1624,19 +1627,19 @@
          <value>Every 3 years</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-15_prm_2">
-         <value>System Acquisition and Configuration Management security controls.</value>
+         <value>System Acquisition and Configuration Management security controls</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-15.3_prm_1">
-         <value>Throughout the system development lifecycle as defined by CMS.</value>
+         <value>Throughout the system development lifecycle as defined by CMS</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-15.3_prm_2">
-         <value>defined as a High Value Asset.</value>
+         <value>defined as a High Value Asset</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-22_prm_1">
          <value>in-house support</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-22_prm_2">
-         <value>provide justification and document the approval for the continued use of unsupported system components required to satisfy mission/business needs.</value>
+         <value>provide justification and document the approval for the continued use of unsupported system components required to satisfy mission/business needs</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sc-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -1651,7 +1654,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sc-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sc-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1678,7 +1681,7 @@
          <value>at managed interfaces and/or for specific systems</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sc-7.5_prm_2">
-         <value>for specific systems.</value>
+         <value>for specific systems</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sc-7.7_prm_1">
          <value>defined security safeguards (i.e. the use of VPN for remote connections, sufficiently provisioned with appropriate security and privacy controls)</value>
@@ -1699,7 +1702,7 @@
          <value>after 30 minutes</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sc-12_prm_1">
-         <value>defined by the System Security and Privacy plan.</value>
+         <value>defined by the System Security and Privacy plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sc-13_prm_1">
          <value>defined cryptographic uses</value>
@@ -1738,7 +1741,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="si-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="si-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1801,7 +1804,7 @@
          <value>personnel or roles defined in the applicable System Security and Privacy Plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="si-4.5_prm_2">
-         <value>Presence of malicious code; Unauthorized export of information; Signaling to an external information system; or Potential intrusions.</value>
+         <value>Presence of malicious code; Unauthorized export of information; Signaling to an external information system; or Potential intrusions</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="si-5_prm_1">
          <value>defined external organizations (including CISA, United States Computer Emergency Readiness Team (US-CERT) and organizations as defined in the applicable System Security and Privacy Plan))</value>
@@ -1864,7 +1867,7 @@
          <value>at least every one (1) year</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sr-1_prm_5">
-         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines).</value>
+         <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sr-1_prm_6">
          <value>at least every one (1) year</value>
@@ -1900,7 +1903,7 @@
          <value>supply chain risk management plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sr-5_prm_1">
-         <value>CMS-defined acquisition strategies, contract tools, and procurement methods; and Business/System-defined acquisition strategies, contract tools, and procurement methods.</value>
+         <value>CMS-defined acquisition strategies, contract tools, and procurement methods; and Business/System-defined acquisition strategies, contract tools, and procurement methods</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sr-6_prm_1">
          <value>every 365 days</value>
