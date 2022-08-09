@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xsl:stylesheet xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:xs="http://www.w3.org/2001/XMLSchema"
-    xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:uuid="java.util.UUID" xmlns:oscal="http://csrc.nist.gov/ns/oscal/1.0"
-    exclude-result-prefixes="xs math uuid oscal" version="3.0" xpath-default-namespace="http://csrc.nist.gov/ns/oscal/1.0" expand-text="true">
+    xmlns:math="http://www.w3.org/2005/xpath-functions/math" xmlns:r="http://csrc.nist.gov/ns/random" xmlns:oscal="http://csrc.nist.gov/ns/oscal/1.0"
+    exclude-result-prefixes="xs math r oscal" version="3.0" xpath-default-namespace="http://csrc.nist.gov/ns/oscal/1.0" expand-text="true">
 
     <!-- Derive an OSCAL catalog for ARS -->
     <!-- ARS specifies all SP 800-53 rev5 controls (not all appear in baselines) -->
@@ -11,6 +11,8 @@
     <!-- or the equivalent as input -->
 
     <xsl:include href="UTC.xsl" />
+
+    <xsl:import href="random-util.xsl" />
 
     <xsl:mode on-no-match="shallow-copy" />
 
@@ -36,7 +38,7 @@
 
     <xsl:template match="catalog">
         <xsl:copy>
-            <xsl:attribute name="uuid" select="uuid:randomUUID()" />
+            <xsl:attribute name="uuid" select="r:make-uuid($UTC-datetime)" />
             <xsl:apply-templates />
         </xsl:copy>
     </xsl:template>
@@ -70,16 +72,16 @@
 
     <xsl:template match="guideline"><!-- NIST oscal-content catalog param guidelines are not guidelines --></xsl:template>
 
-    <xsl:template match="param/prop[@name eq 'aggregates']"><!-- ignore --></xsl:template>
+    <xsl:template match="param/prop[@name eq 'aggregates']"><!-- ignore for now --></xsl:template>
 
-    <xsl:template match="param/prop[@name eq 'alt-identifier']"><!-- ignore --></xsl:template>
+    <xsl:template match="param/prop[@name eq 'alt-identifier']"><!-- ignore for now --></xsl:template>
 
     <xsl:template match="param/prop[@class eq 'sp800-53' and @name eq 'alt-label']">
         <!-- ??? -->
         <xsl:message>{parent::param/@id}</xsl:message>
     </xsl:template>
 
-    <xsl:template match="prop[@class eq 'sp800-53a']"><!-- ignore --></xsl:template>
+    <xsl:template match="prop[@class eq 'sp800-53a']"><!-- ignore for now --></xsl:template>
 
     <xsl:template match="insert">
         <xsl:variable name="p" as="element()" select="//param[@id eq current()/@id-ref]" />
@@ -98,8 +100,8 @@
         </xsl:copy>
     </xsl:template>
 
-    <xsl:template match="part[@name eq 'assessment-objective']"><!-- toss for now --></xsl:template>
+    <xsl:template match="part[@name eq 'assessment-objective']"><!-- ignore for now --></xsl:template>
 
-    <xsl:template match="part[@name eq 'assessment-method']"><!-- toss for now --></xsl:template>
+    <xsl:template match="part[@name eq 'assessment-method']"><!-- ignore for now --></xsl:template>
 
 </xsl:stylesheet>

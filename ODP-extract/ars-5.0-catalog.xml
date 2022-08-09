@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://github.com/usnistgov/OSCAL/raw/v1.0.4/xml/schema/oscal_complete_schema.xsd" schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema" ?>
 <!-- Input document was https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml -->
-<!-- Input document version was 5.1.1 -->
-<!-- Input document last-modified was 2022-01-25T11:42:43.08654-05:00 -->
+<!-- Input document version was 5.1.2 -->
+<!-- Input document last-modified was 2022-06-07T13:22:54.8811289-04:00 -->
 <!-- Transform document was file:/Users/gapinski/Projects/github/GaryGapinski/ars-machine-readable/ODP-extract/ars-5.0-catalog.xsl -->
 <catalog xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="c3c5c3f2-dac6-462f-bbca-f8046ea7be91">
+         uuid="88dd43c2-f435-4825-8b32-aa9e644b5812">
    <metadata>
       <title>&gt;CMS ARS 5.0 Catalog</title>
-      <last-modified>2022-07-10T15:13:29.810593Z</last-modified>
-      <version>2022-07-10T15:13:29.810593Z</version>
+      <last-modified>2022-08-09T11:32:30.045716Z</last-modified>
+      <version>2022-08-09T11:32:30.045716Z</version>
       <oscal-version>1.0.4</oscal-version>
       <link rel="derivation-of"
             href="https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml"/>
@@ -1390,7 +1390,7 @@
             </part>
          </control>
          <control class="SP800-53-enhancement" id="ac-4.27">
-            <title>Redundant/independent Filtering Mechanisms</title>
+            <title>Redundant/Independent Filtering Mechanisms</title>
             <prop name="label" value="AC-4(27)"/>
             <prop name="sort-id" value="ac-04.27"/>
             <link rel="required" href="#ac-4"/>
@@ -2054,8 +2054,7 @@
             <prop name="sort-id" value="ac-11.01"/>
             <link rel="required" href="#ac-11"/>
             <part name="statement" id="ac-11.1_smt">
-               <p>
-                  <strong>Conceal, via the device lock, information previously visible on the display with a publicly viewable image</strong>.</p>
+               <p>Conceal, via the device lock, information previously visible on the display with a publicly viewable image.</p>
             </part>
             <part name="guidance" id="ac-11.1_gdn">
                <p>The pattern-hiding display can include static or dynamic images, such as patterns used with screen savers, photographic images, solid colors, clock, battery life indicator, or a blank screen with the caveat that controlled unclassified information is not displayed.</p>
@@ -9598,7 +9597,7 @@
          </part>
       </control>
       <control class="SP800-53" id="ia-8">
-         <title>Identification and Authentication (non-organizational Users)</title>
+         <title>Identification and Authentication (Non-organizational Users)</title>
          <prop name="label" value="IA-8"/>
          <prop name="sort-id" value="ia-08"/>
          <link rel="reference" href="#27847491-5ce1-4f6a-a1e4-9e483782f0ef"/>
@@ -13760,7 +13759,7 @@
             <p>Rules of behavior represent a type of access agreement for organizational users. Other types of access agreements include nondisclosure agreements, conflict-of-interest agreements, and acceptable use agreements (see  <a href="#ps-6">PS-6</a> ). Organizations consider rules of behavior based on individual user roles and responsibilities and differentiate between rules that apply to privileged users and rules that apply to general users. Establishing rules of behavior for some types of non-organizational users, including individuals who receive information from federal systems, is often not feasible given the large number of such users and the limited nature of their interactions with the systems. Rules of behavior for organizational and non-organizational users can also be established in  <a href="#ac-8">AC-8</a> . The related controls section provides a list of controls that are relevant to organizational rules of behavior.  <a href="#pl-4_smt.b">PL-4b</a> , the documented acknowledgment portion of the control, may be satisfied by the literacy training and awareness and role-based training programs conducted by organizations if such training includes rules of behavior. Documented acknowledgements for rules of behavior include electronic or physical signatures and electronic agreement check boxes or radio buttons.</p>
          </part>
          <control class="SP800-53-enhancement" id="pl-4.1">
-            <title>Social Media and External Site/application Usage Restrictions</title>
+            <title>Social Media and External Site/Application Usage Restrictions</title>
             <prop name="label" value="PL-4(1)"/>
             <prop name="sort-id" value="pl-04.01"/>
             <link rel="required" href="#pl-4"/>
@@ -17531,7 +17530,7 @@
             </part>
          </control>
          <control class="SP800-53-enhancement" id="sa-4.7">
-            <title>Niap-approved Protection Profiles</title>
+            <title>NIAP-approved Protection Profiles </title>
             <prop name="label" value="SA-4(7)"/>
             <prop name="sort-id" value="sa-04.07"/>
             <link rel="required" href="#sa-4"/>
@@ -18537,7 +18536,7 @@
             </part>
          </control>
          <control class="SP800-53-enhancement" id="sa-9.8">
-            <title>Processing and Storage Location — U.s. Jurisdiction</title>
+            <title>Processing and Storage Location — U.S. Jurisdiction</title>
             <prop name="label" value="SA-9(8)"/>
             <prop name="sort-id" value="sa-09.08"/>
             <link rel="required" href="#sa-9"/>
@@ -21112,14 +21111,14 @@
             <p>Cryptography can be employed to support a variety of security solutions, including the protection of classified information and controlled unclassified information, the provision and implementation of digital signatures, and the enforcement of information separation when authorized individuals have the necessary clearances but lack the necessary formal access approvals. Cryptography can also be used to support random number and hash generation. Generally applicable cryptographic standards include FIPS-validated cryptography and NSA-approved cryptography. For example, organizations that need to protect classified information may specify the use of NSA-approved cryptography. Organizations that need to provision and implement digital signatures may specify the use of FIPS-validated cryptography. Cryptography is implemented in accordance with applicable laws, executive orders, directives, regulations, policies, standards, and guidelines.</p>
          </part>
          <control class="SP800-53-enhancement" id="sc-13.1">
-            <title>Fips-validated Cryptography</title>
+            <title>FIPS-validated Cryptography</title>
             <prop name="label" value="SC-13(1)"/>
             <prop name="sort-id" value="sc-13.01"/>
             <prop name="status" value="withdrawn"/>
             <link rel="incorporated-into" href="#sc-13"/>
          </control>
          <control class="SP800-53-enhancement" id="sc-13.2">
-            <title>Nsa-approved Cryptography</title>
+            <title>NSA-approved Cryptography</title>
             <prop name="label" value="SC-13(2)"/>
             <prop name="sort-id" value="sc-13.02"/>
             <prop name="status" value="withdrawn"/>
@@ -21444,7 +21443,7 @@
          </part>
       </control>
       <control class="SP800-53" id="sc-20">
-         <title>Secure Name/address Resolution Service (authoritative Source)</title>
+         <title>Secure Name/Address Resolution Service (Authoritative Source)</title>
          <prop name="label" value="SC-20"/>
          <prop name="sort-id" value="sc-20"/>
          <link rel="reference" href="#678e3d6c-150b-4393-aec5-6e3481eb1e00"/>
@@ -21490,7 +21489,7 @@
          </control>
       </control>
       <control class="SP800-53" id="sc-21">
-         <title>Secure Name/address Resolution Service (recursive or Caching Resolver)</title>
+         <title>Secure Name/Address Resolution Service (Recursive or Caching Resolver)</title>
          <prop name="label" value="SC-21"/>
          <prop name="sort-id" value="sc-21"/>
          <link rel="reference" href="#fe209006-bfd4-4033-a79a-9fee1adaf372"/>
@@ -21511,7 +21510,7 @@
          </control>
       </control>
       <control class="SP800-53" id="sc-22">
-         <title>Architecture and Provisioning for Name/address Resolution Service</title>
+         <title>Architecture and Provisioning for Name/Address Resolution Service</title>
          <prop name="label" value="SC-22"/>
          <prop name="sort-id" value="sc-22"/>
          <link rel="reference" href="#fe209006-bfd4-4033-a79a-9fee1adaf372"/>
@@ -25346,7 +25345,7 @@
             <p>Because supply chains can differ significantly across and within organizations, SCRM plans are tailored to the individual program, organizational, and operational contexts. Tailored SCRM plans provide the basis for determining whether a technology, service, system component, or system is fit for purpose, and as such, the controls need to be tailored accordingly. Tailored SCRM plans help organizations focus their resources on the most critical mission and business functions based on mission and business requirements and their risk environment. Supply chain risk management plans include an expression of the supply chain risk tolerance for the organization, acceptable supply chain risk mitigation strategies or controls, a process for consistently evaluating and monitoring supply chain risk, approaches for implementing and communicating the plan, a description of and justification for supply chain risk mitigation measures taken, and associated roles and responsibilities. Finally, supply chain risk management plans address requirements for developing trustworthy, secure, privacy-protective, and resilient system components and systems, including the application of the security design principles implemented as part of life cycle-based systems security engineering processes (see  <a href="#sa-8">SA-8</a>).</p>
          </part>
          <control class="SP800-53-enhancement" id="sr-2.1">
-            <title>Establish Scrm Team</title>
+            <title>Establish SCRM Team</title>
             <param id="sr-2.1_prm_1">
                <label>personnel, roles and responsibilities</label>
             </param>
