@@ -76,16 +76,36 @@
 
     <xsl:template match="param/prop[@name eq 'alt-identifier']"><!-- ignore for now --></xsl:template>
 
-    <xsl:template match="param/prop[@class eq 'sp800-53' and @name eq 'alt-label']">
-        <!-- ??? -->
-        <xsl:message>{parent::param/@id}</xsl:message>
+    <xsl:template match="param/prop[@class eq 'sp800-53' and @name eq 'alt-label']"><!-- ignore for now --></xsl:template>
+
+    <xsl:template match="param/prop[@class eq 'sp800-53a' and @name eq 'label']"><!-- ignore for now --></xsl:template>
+
+    <xsl:template match="control/prop[@name eq 'label' and @class eq 'sp800-53a']">
+        <prop xmlns="http://csrc.nist.gov/ns/oscal/1.0" class="ARS" name="label" value="{@value}" />
     </xsl:template>
 
-    <xsl:template match="prop[@class eq 'sp800-53a']"><!-- ignore for now --></xsl:template>
+    <!-- single control statement -->
+    <xsl:template match="part[@name eq 'statement' and not(part)]">
+        <xsl:copy>
+            <xsl:copy-of select="attribute::*" />
+            <prop xmlns="http://csrc.nist.gov/ns/oscal/1.0" class="ARS" name="label"
+                value="{ancestor::control[1]/prop[@name eq 'label' and @class eq 'sp800-53a']/@value}a" />
+            <xsl:apply-templates />
+        </xsl:copy>
+    </xsl:template>
+
+    <!-- multiple top-level control statements -->
+    <xsl:template match="part[@name eq 'statement']/part[@name eq 'item']">
+        <xsl:copy>
+            <xsl:copy-of select="attribute::*" />
+            <prop xmlns="http://csrc.nist.gov/ns/oscal/1.0" class="ARS" name="label"
+                value="{ancestor::control[1]/prop[@name eq 'label' and @class eq 'sp800-53a']/@value}{replace(prop[@name eq 'label']/@value,'\W','')}" />
+            <xsl:apply-templates />
+        </xsl:copy>
+    </xsl:template>
 
     <xsl:template match="insert">
         <xsl:variable name="p" as="element()" select="//param[@id eq current()/@id-ref]" />
-
         <xsl:copy>
             <xsl:copy-of select="attribute::type" />
             <xsl:choose>

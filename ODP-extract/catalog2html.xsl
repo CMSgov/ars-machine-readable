@@ -7,6 +7,8 @@
 
     <xsl:param name="show-tailored-ODPs" as="xs:boolean" required="false" select="true()" />
 
+    <xsl:param name="open-details" as="xs:boolean" required="false" select="true()" />
+
     <!--<xsl:mode on-no-match="shallow-skip" />-->
 
     <xsl:output method="html" version="5.0" include-content-type="false" />
@@ -70,12 +72,21 @@
 
         <h2 id="ODP-detail">ARS ODPs</h2>
 
-        <p>The following table shows ARS OSCAL catalog controls</p>
+        <p>The following table shows ARS OSCAL catalog controls which appear in baselines (there are {count(//control[@id = $ODP-high//with-id])}
+            controls and control enhancements).</p>
 
-        <p>The ⬇ symbol appears when ODPs are either undefined or vary by baseline. Click on the ODP too see the baseline values.</p>
+        <p>The ⬇ symbol appears when ODPs are either undefined or vary by baseline. Click on the ODP too see the baseline values. (Tabbing within the
+            document will land on these <code>details</code> elements.)</p>
+
         <p>A single value is displayed when all baseline values are
             identical.<!--The ≡ symbol appears when ODP values are invariant within the baselines.--></p>
-        <p>➤ denotes a top-level control statement.</p>
+
+        <p>➤ denotes a top-level control statement (<i>element</i>) - one for which an individual control implementation response is required.
+            <xsl:text>The Low, Moderate, and High baselines have 
+                {count(//control[@id = $ODP-low//with-id]/part[@name eq 'statement']//prop[@class eq 'ARS' and @name eq 'label'])}, 
+                {count(//control[@id = $ODP-moderate//with-id]/part[@name eq 'statement']//prop[@class eq 'ARS' and @name eq 'label'])}</xsl:text>,
+            and {count(//control[@id = $ODP-high//with-id]/part[@name eq 'statement']//prop[@class eq 'ARS' and @name eq 'label'])} elements
+            respectively.</p>
 
         <table class="tr-hover">
 
@@ -236,7 +247,9 @@
                             </xsl:when>
                             <xsl:otherwise>
                                 <details class="ODPs">
-                                    <!-- open="open" -->
+                                    <xsl:if test="$open-details">
+                                        <xsl:attribute name="open">true</xsl:attribute>
+                                    </xsl:if>
                                     <summary>
                                         <xsl:copy-of select="$insert" />
                                     </summary>
