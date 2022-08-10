@@ -21,9 +21,9 @@
 
     <xsl:variable name="LF" as="xs:string" select="'&#x0a;'" />
 
-    <xsl:variable name="BL" as="xs:string" select="'Ⓛ'" />
-    <xsl:variable name="BM" as="xs:string" select="'Ⓜ'" />
-    <xsl:variable name="BH" as="xs:string" select="'Ⓗ'" />
+    <xsl:variable name="BL" as="xs:string" select="'🄻'" />
+    <xsl:variable name="BM" as="xs:string" select="'🄼'" />
+    <xsl:variable name="BH" as="xs:string" select="'🄷'" />
 
     <!-- input oscal-content catalog -->
     <xsl:variable name="input-catalog" as="document-node()" select="/" />
@@ -118,6 +118,11 @@
                         <td class="center">
                             <div>
                                 <xsl:value-of select="prop[not(@class) and @name eq 'label']/@value" />
+                            </div>
+                            <div>
+                                <xsl:if test="@id = $ODP-low//with-id">{$BL}</xsl:if>
+                                <xsl:if test="@id = $ODP-moderate//with-id">{$BM}</xsl:if>
+                                <xsl:if test="@id = $ODP-high//with-id">{$BH}</xsl:if>
                             </div>
                         </td>
 
