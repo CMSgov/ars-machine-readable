@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://github.com/usnistgov/OSCAL/raw/v1.0.4/xml/schema/oscal_complete_schema.xsd" schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema" ?>
-<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="4d6b984c-404b-49b7-b9a1-8469937f555c">
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="25f6935b-a1b9-4947-bbaa-691f776fa3e4">
     <metadata>
         <title>CMS ARS 5.0 Moderate Profile</title>
-        <last-modified>2022-08-11T15:26:33Z</last-modified>
-        <version>2022-08-11T15:26:33Z</version>
+        <last-modified>2022-08-11T17:35:32Z</last-modified>
+        <version>2022-08-11T17:35:32Z</version>
         <oscal-version>1.0.4</oscal-version>
     </metadata>
     <import href="ars-5.0-catalog.xml">
