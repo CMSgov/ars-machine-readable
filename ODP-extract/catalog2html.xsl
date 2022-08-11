@@ -109,7 +109,7 @@
 
             <tbody>
 
-                <xsl:for-each select="//control[@id = $ODP-high//with-id]">
+                <xsl:for-each select="//control[@id = ($ODP-low//with-id, $ODP-moderate//with-id, $ODP-high//with-id, $ODP-hva//with-id)]">
                     <xsl:sort order="ascending" select="current()/prop[@name eq sort-id]/@value" />
 
                     <xsl:variable name="control" as="element()" select="." />
