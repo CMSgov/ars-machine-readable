@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://github.com/usnistgov/OSCAL/raw/v1.0.4/xml/schema/oscal_complete_schema.xsd" schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema" ?>
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0"
-         uuid="5b9b2908-34a2-4dcf-8fbb-2bcfb3417579">
+         uuid="4122f533-2244-4670-ba18-b9fae759b9a1">
    <metadata>
-      <title>CMS ARS 5.0 Low Profile</title>
+      <title>CMS ARS 5.0 HVA Profile</title>
       <last-modified>2022-08-11T15:26:33Z</last-modified>
       <version>2022-08-11T15:26:33Z</version>
       <oscal-version>1.0.4</oscal-version>
@@ -12,62 +12,180 @@
       <include-controls>
          <with-id>ac-1</with-id>
          <with-id>ac-2</with-id>
+         <with-id>ac-2.1</with-id>
+         <with-id>ac-2.2</with-id>
+         <with-id>ac-2.3</with-id>
+         <with-id>ac-2.4</with-id>
+         <with-id>ac-2.5</with-id>
+         <with-id>ac-2.11</with-id>
+         <with-id>ac-2.12</with-id>
+         <with-id>ac-2.13</with-id>
          <with-id>ac-3</with-id>
+          <with-id>ac-3.14</with-id>
+         <with-id>ac-4</with-id>
+         <with-id>ac-4.4</with-id>
+         <with-id>ac-5</with-id>
+         <with-id>ac-6</with-id>
+         <with-id>ac-6.1</with-id>
+         <with-id>ac-6.2</with-id>
+         <with-id>ac-6.3</with-id>
+         <with-id>ac-6.5</with-id>
+         <with-id>ac-6.7</with-id>
+         <with-id>ac-6.9</with-id>
+         <with-id>ac-6.10</with-id>
          <with-id>ac-7</with-id>
          <with-id>ac-8</with-id>
+         <with-id>ac-10</with-id>
+         <with-id>ac-11</with-id>
+         <with-id>ac-11.1</with-id>
+         <with-id>ac-12</with-id>
          <with-id>ac-14</with-id>
          <with-id>ac-17</with-id>
+         <with-id>ac-17.1</with-id>
+         <with-id>ac-17.2</with-id>
+         <with-id>ac-17.3</with-id>
+         <with-id>ac-17.4</with-id>
          <with-id>ac-18</with-id>
+         <with-id>ac-18.1</with-id>
+         <with-id>ac-18.3</with-id>
+         <with-id>ac-18.4</with-id>
+         <with-id>ac-18.5</with-id>
          <with-id>ac-19</with-id>
+         <with-id>ac-19.5</with-id>
          <with-id>ac-20</with-id>
+         <with-id>ac-20.1</with-id>
+         <with-id>ac-20.2</with-id>
+         <with-id>ac-21</with-id>
          <with-id>ac-22</with-id>
          <with-id>at-1</with-id>
          <with-id>at-2</with-id>
          <with-id>at-2.2</with-id>
+         <with-id>at-2.3</with-id>
          <with-id>at-3</with-id>
+          <with-id>at-3.5</with-id>
          <with-id>at-4</with-id>
          <with-id>au-1</with-id>
          <with-id>au-2</with-id>
          <with-id>au-3</with-id>
+         <with-id>au-3.1</with-id>
+          <with-id>au-3.3</with-id>
          <with-id>au-4</with-id>
          <with-id>au-5</with-id>
+         <with-id>au-5.1</with-id>
+         <with-id>au-5.2</with-id>
          <with-id>au-6</with-id>
+         <with-id>au-6.1</with-id>
+         <with-id>au-6.3</with-id>
+         <with-id>au-6.5</with-id>
+         <with-id>au-6.6</with-id>
+         <with-id>au-7</with-id>
+         <with-id>au-7.1</with-id>
          <with-id>au-8</with-id>
          <with-id>au-9</with-id>
+         <with-id>au-9.2</with-id>
+         <with-id>au-9.3</with-id>
+         <with-id>au-9.4</with-id>
+         <with-id>au-10</with-id>
          <with-id>au-11</with-id>
          <with-id>au-12</with-id>
+         <with-id>au-12.1</with-id>
+         <with-id>au-12.3</with-id>
          <with-id>ca-1</with-id>
          <with-id>ca-2</with-id>
+         <with-id>ca-2.1</with-id>
+         <with-id>ca-2.2</with-id>
+          <with-id>ca-2.3</with-id>
          <with-id>ca-3</with-id>
+         <with-id>ca-3.6</with-id>
          <with-id>ca-5</with-id>
          <with-id>ca-6</with-id>
          <with-id>ca-7</with-id>
+         <with-id>ca-7.1</with-id>
          <with-id>ca-7.4</with-id>
+         <with-id>ca-8</with-id>
+         <with-id>ca-8.1</with-id>
          <with-id>ca-9</with-id>
          <with-id>cm-1</with-id>
          <with-id>cm-2</with-id>
+         <with-id>cm-2.2</with-id>
+         <with-id>cm-2.3</with-id>
+         <with-id>cm-2.7</with-id>
+         <with-id>cm-3</with-id>
+         <with-id>cm-3.1</with-id>
+         <with-id>cm-3.2</with-id>
+         <with-id>cm-3.4</with-id>
+         <with-id>cm-3.6</with-id>
          <with-id>cm-4</with-id>
+         <with-id>cm-4.1</with-id>
+         <with-id>cm-4.2</with-id>
          <with-id>cm-5</with-id>
+         <with-id>cm-5.1</with-id>
          <with-id>cm-6</with-id>
+         <with-id>cm-6.1</with-id>
+         <with-id>cm-6.2</with-id>
          <with-id>cm-7</with-id>
+         <with-id>cm-7.1</with-id>
+         <with-id>cm-7.2</with-id>
+         <with-id>cm-7.5</with-id>
          <with-id>cm-8</with-id>
+         <with-id>cm-8.1</with-id>
+         <with-id>cm-8.2</with-id>
+         <with-id>cm-8.3</with-id>
+         <with-id>cm-8.4</with-id>
+         <with-id>cm-9</with-id>
          <with-id>cm-10</with-id>
          <with-id>cm-11</with-id>
+         <with-id>cm-12</with-id>
+         <with-id>cm-12.1</with-id>
          <with-id>cp-1</with-id>
          <with-id>cp-2</with-id>
+         <with-id>cp-2.1</with-id>
+         <with-id>cp-2.2</with-id>
+         <with-id>cp-2.3</with-id>
+         <with-id>cp-2.5</with-id>
+         <with-id>cp-2.8</with-id>
          <with-id>cp-3</with-id>
+         <with-id>cp-3.1</with-id>
          <with-id>cp-4</with-id>
+         <with-id>cp-4.1</with-id>
+         <with-id>cp-4.2</with-id>
+         <with-id>cp-6</with-id>
+         <with-id>cp-6.1</with-id>
+         <with-id>cp-6.2</with-id>
+         <with-id>cp-6.3</with-id>
+         <with-id>cp-7</with-id>
+         <with-id>cp-7.1</with-id>
+         <with-id>cp-7.2</with-id>
+         <with-id>cp-7.3</with-id>
+         <with-id>cp-7.4</with-id>
+         <with-id>cp-8</with-id>
+         <with-id>cp-8.1</with-id>
+         <with-id>cp-8.2</with-id>
+         <with-id>cp-8.3</with-id>
+         <with-id>cp-8.4</with-id>
          <with-id>cp-9</with-id>
+         <with-id>cp-9.1</with-id>
+         <with-id>cp-9.2</with-id>
+         <with-id>cp-9.3</with-id>
+         <with-id>cp-9.5</with-id>
+         <with-id>cp-9.8</with-id>
          <with-id>cp-10</with-id>
+         <with-id>cp-10.2</with-id>
+         <with-id>cp-10.4</with-id>
          <with-id>ia-1</with-id>
          <with-id>ia-2</with-id>
          <with-id>ia-2.1</with-id>
          <with-id>ia-2.2</with-id>
+         <with-id>ia-2.5</with-id>
          <with-id>ia-2.8</with-id>
          <with-id>ia-2.12</with-id>
+         <with-id>ia-3</with-id>
          <with-id>ia-4</with-id>
+         <with-id>ia-4.4</with-id>
          <with-id>ia-5</with-id>
          <with-id>ia-5.1</with-id>
+         <with-id>ia-5.2</with-id>
+         <with-id>ia-5.6</with-id>
          <with-id>ia-6</with-id>
          <with-id>ia-7</with-id>
          <with-id>ia-8</with-id>
@@ -75,35 +193,82 @@
          <with-id>ia-8.2</with-id>
          <with-id>ia-8.4</with-id>
          <with-id>ia-11</with-id>
+         <with-id>ia-12</with-id>
+         <with-id>ia-12.2</with-id>
+         <with-id>ia-12.3</with-id>
+         <with-id>ia-12.4</with-id>
+         <with-id>ia-12.5</with-id>
          <with-id>ir-1</with-id>
          <with-id>ir-2</with-id>
+          <with-id>ir-2.3</with-id>
+         <with-id>ir-3</with-id>
+         <with-id>ir-3.2</with-id>
          <with-id>ir-4</with-id>
+         <with-id>ir-4.1</with-id>
+         <with-id>ir-4.4</with-id>
+         <with-id>ir-4.11</with-id>
          <with-id>ir-5</with-id>
+         <with-id>ir-5.1</with-id>
          <with-id>ir-6</with-id>
+         <with-id>ir-6.1</with-id>
+         <with-id>ir-6.3</with-id>
          <with-id>ir-7</with-id>
+         <with-id>ir-7.1</with-id>
          <with-id>ir-8</with-id>
+          <with-id>ir-8.1</with-id>
          <with-id>ma-1</with-id>
          <with-id>ma-2</with-id>
+         <with-id>ma-2.2</with-id>
+         <with-id>ma-3</with-id>
+         <with-id>ma-3.1</with-id>
+         <with-id>ma-3.2</with-id>
+         <with-id>ma-3.3</with-id>
          <with-id>ma-4</with-id>
+         <with-id>ma-4.3</with-id>
          <with-id>ma-5</with-id>
+         <with-id>ma-5.1</with-id>
+         <with-id>ma-6</with-id>
          <with-id>mp-1</with-id>
          <with-id>mp-2</with-id>
+         <with-id>mp-3</with-id>
+         <with-id>mp-4</with-id>
+         <with-id>mp-5</with-id>
          <with-id>mp-6</with-id>
+         <with-id>mp-6.1</with-id>
+         <with-id>mp-6.2</with-id>
+         <with-id>mp-6.3</with-id>
          <with-id>mp-7</with-id>
          <with-id>pe-1</with-id>
          <with-id>pe-2</with-id>
          <with-id>pe-3</with-id>
+         <with-id>pe-3.1</with-id>
+         <with-id>pe-4</with-id>
+         <with-id>pe-5</with-id>
          <with-id>pe-6</with-id>
+         <with-id>pe-6.1</with-id>
+         <with-id>pe-6.4</with-id>
          <with-id>pe-8</with-id>
+         <with-id>pe-8.1</with-id>
+         <with-id>pe-9</with-id>
+         <with-id>pe-10</with-id>
+         <with-id>pe-11</with-id>
+         <with-id>pe-11.1</with-id>
          <with-id>pe-12</with-id>
          <with-id>pe-13</with-id>
+         <with-id>pe-13.1</with-id>
+         <with-id>pe-13.2</with-id>
          <with-id>pe-14</with-id>
          <with-id>pe-15</with-id>
+         <with-id>pe-15.1</with-id>
          <with-id>pe-16</with-id>
+         <with-id>pe-17</with-id>
+         <with-id>pe-18</with-id>
          <with-id>pl-1</with-id>
          <with-id>pl-2</with-id>
          <with-id>pl-4</with-id>
          <with-id>pl-4.1</with-id>
+         <with-id>pl-8</with-id>
+          <with-id>pl-9</with-id>
          <with-id>pl-10</with-id>
          <with-id>pl-11</with-id>
           <with-id>pm-1</with-id>
@@ -147,50 +312,131 @@
          <with-id>ps-2</with-id>
          <with-id>ps-3</with-id>
          <with-id>ps-4</with-id>
+         <with-id>ps-4.2</with-id>
          <with-id>ps-5</with-id>
          <with-id>ps-6</with-id>
          <with-id>ps-7</with-id>
          <with-id>ps-8</with-id>
          <with-id>ps-9</with-id>
+          <with-id>pt-1</with-id>
+          <with-id>pt-2</with-id>
+          <with-id>pt-3</with-id>
+          <with-id>pt-4</with-id>
+          <with-id>pt-5</with-id>
+          <with-id>pt-5.2</with-id>
+          <with-id>pt-6</with-id>
+          <with-id>pt-6.1</with-id>
+          <with-id>pt-6.2</with-id>
+          <with-id>pt-7</with-id>
+          <with-id>pt-7.1</with-id>
+          <with-id>pt-7.2</with-id>
+          <with-id>pt-8</with-id>
          <with-id>ra-1</with-id>
          <with-id>ra-2</with-id>
          <with-id>ra-3</with-id>
          <with-id>ra-3.1</with-id>
          <with-id>ra-5</with-id>
          <with-id>ra-5.2</with-id>
+         <with-id>ra-5.4</with-id>
+         <with-id>ra-5.5</with-id>
          <with-id>ra-5.11</with-id>
          <with-id>ra-7</with-id>
+          <with-id>ra-8</with-id>
+         <with-id>ra-9</with-id>
          <with-id>sa-1</with-id>
          <with-id>sa-2</with-id>
          <with-id>sa-3</with-id>
          <with-id>sa-4</with-id>
+         <with-id>sa-4.1</with-id>
+         <with-id>sa-4.2</with-id>
+         <with-id>sa-4.5</with-id>
+         <with-id>sa-4.9</with-id>
          <with-id>sa-4.10</with-id>
          <with-id>sa-5</with-id>
          <with-id>sa-8</with-id>
+          <with-id>sa-8.33</with-id>
          <with-id>sa-9</with-id>
+         <with-id>sa-9.2</with-id>
+         <with-id>sa-10</with-id>
+         <with-id>sa-11</with-id>
+         <with-id>sa-15</with-id>
+         <with-id>sa-15.3</with-id>
+         <with-id>sa-16</with-id>
+         <with-id>sa-17</with-id>
+         <with-id>sa-21</with-id>
          <with-id>sa-22</with-id>
          <with-id>sc-1</with-id>
+         <with-id>sc-2</with-id>
+         <with-id>sc-3</with-id>
+         <with-id>sc-4</with-id>
          <with-id>sc-5</with-id>
          <with-id>sc-7</with-id>
+         <with-id>sc-7.3</with-id>
+         <with-id>sc-7.4</with-id>
+         <with-id>sc-7.5</with-id>
+         <with-id>sc-7.7</with-id>
+         <with-id>sc-7.8</with-id>
+          <with-id>sc-7.24</with-id>
+         <with-id>sc-8</with-id>
+         <with-id>sc-8.1</with-id>
+         <with-id>sc-10</with-id>
          <with-id>sc-12</with-id>
+         <with-id>sc-12.1</with-id>
          <with-id>sc-13</with-id>
          <with-id>sc-15</with-id>
+         <with-id>sc-17</with-id>
+         <with-id>sc-18</with-id>
          <with-id>sc-20</with-id>
          <with-id>sc-21</with-id>
          <with-id>sc-22</with-id>
+         <with-id>sc-23</with-id>
+         <with-id>sc-24</with-id>
+         <with-id>sc-28</with-id>
+         <with-id>sc-28.1</with-id>
          <with-id>sc-39</with-id>
          <with-id>si-1</with-id>
          <with-id>si-2</with-id>
+         <with-id>si-2.2</with-id>
          <with-id>si-3</with-id>
          <with-id>si-4</with-id>
+         <with-id>si-4.2</with-id>
+         <with-id>si-4.4</with-id>
+         <with-id>si-4.5</with-id>
+         <with-id>si-4.10</with-id>
+         <with-id>si-4.12</with-id>
+         <with-id>si-4.14</with-id>
+         <with-id>si-4.20</with-id>
+         <with-id>si-4.22</with-id>
          <with-id>si-5</with-id>
+         <with-id>si-5.1</with-id>
+         <with-id>si-6</with-id>
+         <with-id>si-7</with-id>
+         <with-id>si-7.1</with-id>
+         <with-id>si-7.2</with-id>
+         <with-id>si-7.5</with-id>
+         <with-id>si-7.7</with-id>
+         <with-id>si-7.15</with-id>
+         <with-id>si-8</with-id>
+         <with-id>si-8.2</with-id>
+         <with-id>si-10</with-id>
+         <with-id>si-11</with-id>
          <with-id>si-12</with-id>
+          <with-id>si-12.1</with-id>
+          <with-id>si-12.2</with-id>
+          <with-id>si-12.3</with-id>
+         <with-id>si-16</with-id>
+          <with-id>si-18</with-id>
+          <with-id>si-18.4</with-id>
+          <with-id>si-19</with-id>
          <with-id>sr-1</with-id>
          <with-id>sr-2</with-id>
          <with-id>sr-2.1</with-id>
          <with-id>sr-3</with-id>
          <with-id>sr-5</with-id>
+         <with-id>sr-6</with-id>
          <with-id>sr-8</with-id>
+         <with-id>sr-9</with-id>
+         <with-id>sr-9.1</with-id>
          <with-id>sr-10</with-id>
          <with-id>sr-11</with-id>
          <with-id>sr-11.1</with-id>
@@ -250,8 +496,83 @@
       <set-parameter class="ODP" param-id="ac-2_prm_10">
          <value>at least every 365 days for all systems</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.1_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.2_prm_1">
+         <value>Disable</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.2_prm_2">
+         <value>31 days for High systems and 60 days for Moderate Systems</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.3_prm_1">
+         <value>thirty (30) days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.3_prm_2">
+         <value>30 days for High systems and 60 days for Moderate Systems</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.5_prm_1">
+         <value>the time-period of inactivity exceeds 90 minutes and at the end of the user’s normal work period</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.11_prm_1">
+         <value>defined circumstances and/or usage conditions (as defined in applicable security and privacy plans)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.11_prm_2">
+         <value>defined system accounts (as defined in applicable security and privacy plans)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.12_prm_1">
+         <value>atypical use</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.12_prm_2">
+         <value>defined personnel or roles (in applicable security and privacy plans), and if necessary, any applicable incident response team(s)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.13_prm_1">
+         <value>Within 30 minutes for High, within 60 minutes for Moderate</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-2.13_prm_2">
+         <value>violation of CMS policy</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-4_prm_1">
+         <value>defined information flow control policies (in applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-4.4_prm_1">
+         <value>information flow control mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-4.4_prm_2">
+         <value>either blocking the flow of the encrypted information or terminating communications sessions attempting to pass encrypted information</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-5_prm_1">
+         <value>duties of individuals requiring separation</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-6.1_prm_1">
+         <value>defined individuals or roles</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-6.1_prm_2">
+         <value>CMS -defined security functions (deployed in hardware, software, and firmware)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-6.1_prm_3">
+         <value>Setting/modifying audit logs and auditing behavior; Setting/modifying boundary protection system rules; Configuring/modifying access authorizations (i.e., permissions, privileges); Setting/modifying authentication parameters; and Setting/modifying system configurations and parameters</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-6.2_prm_1">
+         <value>Setting/modifying audit logs and auditing behavior; Setting/modifying boundary protection system rules; Configuring/modifying access authorizations (i.e., permissions, privileges); Setting/modifying authentication parameters; and Setting/modifying system configurations and parameters</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-6.3_prm_1">
+         <value>privileged commands to which network access is to be authorized only for compelling operational needs are defined</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-6.3_prm_2">
+         <value>compelling operational needs necessitating network access to privileged commands are defined in the system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-6.5_prm_1">
+         <value>personnel or roles (defined in applicable security and privacy plans)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-6.7_prm_1">
+         <value>no less often than every ninety (90) days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-6.7_prm_2">
+         <value>defined roles or classes of users</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="ac-7_prm_1">
-         <value>lock out the user account automatically after five (5) invalid login attempts</value>
+         <value>lock out the user account automatically after three (3) invalid login attempts</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-7_prm_2">
          <value>120 minutes</value>
@@ -259,8 +580,8 @@
       <set-parameter class="ODP" param-id="ac-7_prm_3">
          <value>disable or lock the account or node for the time period specified or until the lock is released by an administrator, and record the event within appropriate security logs</value>
       </set-parameter>
-      <set-parameter class="ODP" param-id="ac-7_prm_4">
-         <value>fifteen (15) Minutes</value>
+      <set-parameter class="ODP" param-id="ac-7_prm_5">
+         <value>Until released by an Administrator</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-7_prm_6">
          <value>record event within appropriate security logs</value>
@@ -271,8 +592,35 @@
       <set-parameter class="ODP" param-id="ac-8_prm_2">
          <value>the banner is retained on screen until users acknowledge usage conditions and take explicit actions to further access the system</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="ac-10_prm_1">
+         <value>account and/or account types to one (1) session for both normal and privileged users. The number of concurrent application/process sessions is limited and enforced</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-10_prm_2">
+         <value>the number of sessions expressly required for the performance of job duties and any requirement for more than one (1) concurrent application/process session is documented in the applicable security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-11_prm_1">
+         <value>initiating a device lock after fifteen (15) minutes of inactivity (for both remote and internal access connections), requiring the user to initiate a device lock before leaving the system unattended, or upon receiving a request from a user</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-11_prm_2">
+         <value>15 minutes</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-12_prm_1">
+         <value>conditions or trigger events requiring session disconnect are defined in the appropriate system security and privacy plan</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="ac-14_prm_1">
          <value>defined in the appropriate system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-17.4_prm_1">
+         <value>defined in the appropriate system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-18.1_prm_1">
+         <value>both users and devices</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-19.5_prm_1">
+         <value>CMS-required (FIPS 140-2/140-3 validated module) full-device encryption or container encryption</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-19.5_prm_2">
+         <value>approved mobile devices (defined in applicable security and privacy plans)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-20_prm_1">
          <value>Establish defined terms and conditions and identify defined controls asserted to be implemented on external systems</value>
@@ -285,6 +633,15 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-20_prm_4">
          <value>organizationally-defined types of external systems</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-20.2_prm_1">
+         <value>restrictions on the use of organization-controlled portable storage devices by authorized individuals on external systems are defined in applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-21_prm_1">
+         <value>approved information-sharing circumstances where user discretion is required</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ac-21_prm_2">
+         <value>defined automated mechanisms, or manual processes (defined in applicable security and privacy plans)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ac-22_prm_1">
          <value>bi-weekly (no less often than 14 days)</value>
@@ -332,13 +689,13 @@
          <value>Within sixty (60) days of entering security and privacy roles and responsibilities before authorizing access to the system, information, or performing assigned duties</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="at-3_prm_3">
-         <value>Every 365 days</value>
+         <value>365 days</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="at-3_prm_4">
          <value>CMS-defined events that include, but are not limited to assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="at-4_prm_1">
-         <value>Five (5) Years</value>
+         <value>Five (5) years</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -370,14 +727,38 @@
       <set-parameter class="ODP" param-id="au-2_prm_3">
          <value>no less often than every three hundred sixty-five (365) days and whenever there is a significant system modification</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="au-3.1_prm_1">
+         <value>identified in the privacy risk assessment</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="au-4_prm_1">
          <value>Capacity must be sufficient to handle auditing records during peak performance times (e.g., open enrollment)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-5_prm_1">
          <value>defined in the applicable system security and privacy plan</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="au-5_prm_2">
+         <value>one (1) hour of discovery/notification</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="au-5_prm_3">
-         <value>Shutdown the information system or halt processing; Stop generating audit records; or Overwrite the oldest records, in the case that storage media is unavailable</value>
+         <value>Shutdown the information system or halt processing immediately; and Systems that do not support automatic shutdown must be shut down within 1 hour of the audit processing failure</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-5.1_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-5.1_prm_2">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-5.1_prm_3">
+         <value>80</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-5.2_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-5.2_prm_2">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-5.2_prm_3">
+         <value>defined in the applicable system security and privacy plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-6_prm_1">
          <value>no less often than weekly seven (7) days</value>
@@ -388,10 +769,31 @@
       <set-parameter class="ODP" param-id="au-6_prm_3">
          <value>defined in the applicable system security and privacy plan</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="au-6.1_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-6.5_prm_1">
+         <value>(one or more of the following, defined in the applicable system security and privacy plan): vulnerability scanning information; performance data; system monitoring information; and/or other defined data/information collected from other sources (defined in the applicable system security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-6.5_prm_2">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-7.1_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="au-8_prm_1">
          <value>accurate to within one hundred (100) milliseconds</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-9_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-9.2_prm_1">
+         <value>no less often than weekly seven (7) days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-9.4_prm_1">
+         <value>individuals or roles who are not subject to audit by that system (defined in applicable system security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-10_prm_1">
          <value>defined in the applicable system security and privacy plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="au-11_prm_1">
@@ -402,6 +804,24 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="au-12_prm_2">
          <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-12.1_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-12.1_prm_2">
+         <value>Within +/- five (5) minutes</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-12.3_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-12.3_prm_2">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-12.3_prm_3">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="au-12.3_prm_4">
+         <value>within minutes</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ca-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -430,6 +850,18 @@
       <set-parameter class="ODP" param-id="ca-2_prm_2">
          <value>the Business Owner responsible for the system and personnel responsible for reviewing the assessment documentation, and updating security and privacy documentation where necessary to reflect any changes to the system within thirty (30) days after its completion, in writing</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="ca-2.2_prm_1">
+         <value>365 days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ca-2.2_prm_2">
+         <value>announced or unannounced</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ca-2.2_prm_3">
+         <value>in-depth monitoring; security instrumentation; automated security test cases; vulnerability scanning; malicious user testing; insider threat assessment; performance and load testing; data leakage or data loss assessment</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ca-2.2_prm_4">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="ca-3_prm_1">
          <value>: interconnection security agreements (ISA); information exchange security agreements; memoranda of understanding or agreement (MOU/MOA); service level agreements (SLA)</value>
       </set-parameter>
@@ -456,6 +888,12 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="ca-7_prm_5">
          <value>monthly</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ca-8_prm_1">
+         <value>within every three hundred sixty-five (365) days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ca-8_prm_2">
+         <value>defined systems or system components (defined in the applicable system security and privacy plan), or whenever there is a significant change to the system or system components</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ca-9_prm_1">
          <value>system components or classes of components (defined in the applicable system security and privacy plan)</value>
@@ -493,6 +931,57 @@
       <set-parameter class="ODP" param-id="cm-2_prm_2">
          <value>major system changes/upgrades, critical security patches (as defined by the Federal Government, CMS, or vendor), and emergency changes (e.g., unscheduled changes, system crashes, replacement of critical hardware components)</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="cm-2.2_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-2.7_prm_1">
+         <value>systems, system components, or devices (e.g., CMS government-furnished laptops, mobile devices, equipment)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-2.7_prm_2">
+         <value>stringent configurations (e.g., FIPS 140-2 compliant encryption)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-2.7_prm_3">
+         <value>security safeguards to systems, system components, or devices (e.g., detailed inspection and examination of the device (GFE) for physical tampering, purging or reimaging the hard disk drive/removable media) when the individuals return from travel</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3_prm_1">
+         <value>no less than twelve (12) months after the change</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3_prm_2">
+         <value>change request forms which must be approved by an organizational and/or CMS Change Control Board</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3_prm_3">
+         <value>frequently enough to accommodate proposed change requests, and other appropriate organization officials including, but not limited to, the System Developer/Maintainer and information system support staff</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3_prm_4">
+         <value>frequently enough to accommodate proposed change requests</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3_prm_5">
+         <value>changes to baseline configurations, configuration items of systems, operational procedures, configuration settings for system components, remediate vulnerabilities, and unscheduled or unauthorized change</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3.1_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3.1_prm_2">
+         <value>designated approval authorities (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3.1_prm_3">
+         <value>a time period specified by the system change management process (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3.1_prm_4">
+         <value>applicable personnel or stakeholders</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3.4_prm_1">
+         <value>Require CMS-defined security and privacy representatives to be members of the CMS-defined configuration change control element. These individuals could be but are not limited to: -System Security Officers -Senior Agency Information Security Officers -Senior Agency Officials for Privacy -System Privacy Officers</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3.4_prm_2">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-3.6_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-5.1_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="cm-6_prm_1">
          <value>Use of HHS and CMS approved Operating System (OS) (a) HHS-specific minimum security configurations must be used for the following OS and Applications: 1. HHS approved USGCB Windows Standards (e.g., Microsoft supported versions only); and 2. Blackberry Server - Websense. (b) For all other OS’s and applications, and to resolve configuration conflicts among multiple security guidelines, the CMS hierarchy for implementing security configuration guidelines is: 1. USGCB; 2. NIST NCP; Tier IV, then Tier III, Tier II, and Tier I, in descending order; 3. Defense Information Systems Agency (DISA) Security Technical Implementation Guides (STIG); 4. National Security Agency (NSA) STIGs; 5. If formal government-authored checklists do not exist, then organizations are encouraged to use vendor or industry group (such as The Center for Internet Security [CIS]) checklists. 6. In situations where no guidance exists, coordinate with CMS for guidance. CMS must collaborate within CMS and the HHS Cybersecurity Program, and other organizations through the HHS Continuous Monitoring and Risk Scoring (CMRS) working group to: - Establish baseline configurations and communicate industry and vendor best practices; and - Ensure deployed configurations are supported for security updates. 7. All deviations from existing USGCB, NCP, DISA and/or NSA configurations must be documented</value>
       </set-parameter>
@@ -502,17 +991,68 @@
       <set-parameter class="ODP" param-id="cm-6_prm_3">
          <value>explicit operational requirements (defined in the applicable system security and privacy plan)</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="cm-6.1_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-6.1_prm_2">
+         <value>security information and event management (SIEM) tools or enterprise security monitoring tools</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-6.2_prm_1">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-6.2_prm_2">
+         <value>Alert responsible personnel or role (defined in the applicable system security and privacy plan); (b) Restore to approved configuration; and (c) Halt system processing as warranted</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="cm-7_prm_1">
          <value>defined in the applicable system security and privacy plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-7_prm_2">
          <value>functions, system ports, protocols, software, and/or services deemed that are prohibited and/or restricted</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="cm-7.1_prm_1">
+         <value>upon encountering a significant risk, or at least every thirty (30) days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-7.1_prm_2">
+         <value>functions, ports, protocols, software, and services within the information system deemed to be unnecessary and/or nonsecure</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-7.2_prm_1">
+         <value>policies, rules of behavior, and/or access agreements regarding software program usage and restrictions&gt;; rules authorizing the terms and conditions of software program usage</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-7.2_prm_2">
+         <value>Software must be legally licensed; Software must be provisioned in approved configurations; and Users must be authorized for software program use</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-7.5_prm_1">
+         <value>software programs (defined in the applicable security and privacy plan) authorized to execute on the system</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-7.5_prm_2">
+         <value>no less often than every seventy-two (72) hours</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="cm-8_prm_1">
          <value>Each component’s unique identifier and/or serial number; Information system of which the component is a part; Type of information system component (e.g., server, desktop, application); Manufacturer/model information; Operating system type and version/service pack level; Presence of virtual machines; Application software version/license information; Physical location (e.g., building/room number); Logical location (e.g., IP address, position with the information system [IS] architecture); Media access control (MAC) address; Ownership; Operational status; Primary and secondary administrators; and Primary user</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-8_prm_2">
          <value>180 days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-8.2_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-8.3_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-8.3_prm_2">
+         <value>Seven (7) days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-8.3_prm_3">
+         <value>Disable access to the identified component; Disable the identified component’s network access; Isolate the identified component; and Notify responsible personnel or role (defined in applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-8.3_prm_4">
+         <value>defined in the applicable system security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-8.4_prm_1">
+         <value>position and role</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-9_prm_1">
+         <value>CMS defined personnel or roles (e.g., Business Owner, System Owner) (defined in applicable security and privacy plan)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-11_prm_1">
          <value>defined in the applicable system security and privacy plan</value>
@@ -522,6 +1062,15 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="cm-11_prm_3">
          <value>at least monthly every thirty (30) days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-12_prm_1">
+         <value>information</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-12.1_prm_1">
+         <value>information by information type</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cm-12.1_prm_2">
+         <value>system components</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="cp-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -556,6 +1105,18 @@
       <set-parameter class="ODP" param-id="cp-2_prm_4">
          <value>ISSO, Business Owner, Contingency Plan Coordinator (CPC), and other stakeholders identified within the applicable system's contingency plan</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="cp-2.3_prm_1">
+         <value>all essential</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-2.3_prm_2">
+         <value>Twelve (12) hours</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-2.5_prm_1">
+         <value>essential</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-2.8_prm_1">
+         <value>essential</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="cp-3_prm_1">
          <value>ninety (90) days</value>
       </set-parameter>
@@ -574,6 +1135,21 @@
       <set-parameter class="ODP" param-id="cp-4_prm_2">
          <value>CMS -defined tests and exercises, such as tabletop tests, simulations (parallel or full interrupt), and comprehensive exercises</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="cp-7_prm_1">
+         <value>specified by the applicable system contingency plan or COOP for the business function(s) supported by the system</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-7_prm_2">
+         <value>specified by the applicable system contingency plan or COOP for the business function(s) supported by the system</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-8_prm_1">
+         <value>specified by the applicable system contingency plan or COOP for the business function(s) supported by the system</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-8_prm_2">
+         <value>specified by the applicable system contingency plan or COOP for the business function(s) supported by the system</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-8.4_prm_1">
+         <value>within every three hundred sixty-five (365) days</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="cp-9_prm_1">
          <value>system components in accordance with the frequency specified in Implementation Standard</value>
       </set-parameter>
@@ -586,8 +1162,23 @@
       <set-parameter class="ODP" param-id="cp-9_prm_4">
          <value>Full Backups - Weekly Incremental Backups - Daily</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="cp-9.1_prm_1">
+         <value>at least every three months for High systems</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-9.3_prm_1">
+         <value>specified by the applicable system contingency plan or COOP for the business function(s) supported by the system</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-9.5_prm_1">
+         <value>at defined time periods (defined in the applicable security and privacy plan) and transfer rates (defined in the applicable security and privacy plan) consistent with the recovery time and recovery point objectives</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-9.8_prm_1">
+         <value>specified by the applicable system contingency plan or COOP for the business function(s) supported by the system</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="cp-10_prm_1">
          <value>defined time period (specified in the applicable security and privacy plan, contingency plan, or COOP) consistent with the recovery time and recovery point objectives</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="cp-10.4_prm_1">
+         <value>the target restoration time (specified in applicable system contingency plan or disaster recovery plan)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ia-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -613,11 +1204,20 @@
       <set-parameter class="ODP" param-id="ia-2.8_prm_1">
          <value>privileged accounts and non-privileged accounts</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="ia-3_prm_1">
+         <value>devices (defined in applicable security/privacy plans) that require authentication mechanisms, which, at a minimum, use shared information (MAC or IP address) and access control lists to control remote network access</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ia-3_prm_2">
+         <value>remote</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="ia-4_prm_1">
          <value>defined personnel or roles (defined in applicable security/privacy plans)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ia-4_prm_2">
          <value>three (3) years</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ia-4.4_prm_1">
+         <value>defined in applicable security/privacy plans</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ia-5_prm_1">
          <value>as defined in applicable security/privacy plans</value>
@@ -629,13 +1229,19 @@
          <value>using as frequently defined in applicable security/privacy plans, not to exceed three-hundred sixty-five (365) days,</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ia-5.1_prm_2">
-         <value>MinimumPasswordLength = Minimum length of eight (8) characters for regular user passwords, and minimum length of fifteen (15) characters for administrator or privileged user passwords; PasswordComplexity = minimum one (1) character(s) from the three (3) character categories (A-Z, a-z, 0-9); and PasswordHistorySize = six (6) passwords</value>
+         <value>MinimumPasswordLength = Minimum length of eight (8) characters for regular user passwords, and minimum length of fifteen (15) characters for administrator or privileged user passwords; PasswordComplexity = minimum three (3) character(s) from the three(3) character categories (A-Z, a-z, 0-9); and PasswordHistorySize = twelve (12) passwords</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ia-8.4_prm_1">
          <value>NIST-issued</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ia-11_prm_1">
          <value>CMS-defined circumstances or situations occur requiring re-authentication as defined in applicable security/privacy plans</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ia-12.3_prm_1">
+         <value>CMS approved methods of validation and verification</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ia-12.5_prm_1">
+         <value>registration code or notice of proofing</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ir-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -670,11 +1276,35 @@
       <set-parameter class="ODP" param-id="ir-2_prm_4">
          <value>defined events/incidents (specified in applicable system security and privacy plan)</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="ir-2.2_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ir-3_prm_1">
+         <value>every 365 days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ir-3_prm_2">
+         <value>CMS-defined tests (e.g., the use of checklists, walk-through, discussion-based exercises or tabletop exercises, simulations, and comprehensive exercises)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ir-4.1_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ir-4.11_prm_1">
+         <value>a reasonable time period CMS ODP TBD, as resources allow, upon discovery/notification</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ir-5.1_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="ir-6_prm_1">
          <value>one (1) hour of discovery/notification</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ir-6_prm_2">
          <value>the CMS IT Service Help Desk</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ir-6.1_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ir-7.1_prm_1">
+         <value>automated mechanisms</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ir-8_prm_1">
          <value>Business Owner</value>
@@ -721,6 +1351,24 @@
       <set-parameter class="ODP" param-id="ma-2_prm_3">
          <value>maintenance-related information as defined in the applicable security and privacy plan</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="ma-2.2_prm_1">
+         <value>automated mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ma-3_prm_1">
+         <value>every thirty (30) days monthly</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ma-3.3_prm_1">
+         <value>the CMS CIO or his/her designated representative</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ma-5.1_prm_1">
+         <value>alternate controls (defined in applicable system security/privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ma-6_prm_1">
+         <value>key information system components defined in the applicable security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ma-6_prm_2">
+         <value>applicable Recovery Time Objective (RTO)</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="mp-1_prm_1">
          <value>applicable personnel and roles</value>
       </set-parameter>
@@ -748,11 +1396,35 @@
       <set-parameter class="ODP" param-id="mp-2_prm_2">
          <value>personnel or roles defined in the applicable security and privacy plan</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="mp-3_prm_1">
+         <value>defined types of system media, as specified, in writing, by the CMS CIO or his/her designated representative,</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="mp-3_prm_2">
+         <value>a secure environment</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="mp-4_prm_1">
+         <value>digital and non-digital media pursuant to HHS Policy and in compliance with the latest revision of NIST SP 800-88, Guidelines for Media Sanitization</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="mp-4_prm_2">
+         <value>CMS-controlled areas and data centers pursuant to HHS Policy</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="mp-5_prm_1">
+         <value>digital and non-digital media pursuant to HHS Policy, as well as HHS Standards for Encryption of Computing Devices and Information,</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="mp-5_prm_2">
+         <value>cryptography (in the case of sensitive information), and/or security safeguards (locked containers and tamper-evident packaging) commensurate with the FIPS 199 security categorizations for confidentiality and integrity of the data</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="mp-6_prm_1">
          <value>digital and non-digital system media pursuant to HHS Policy</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="mp-6_prm_2">
          <value>defined sanitization techniques and procedures (defined in the applicable security and privacy plan) in accordance with applicable federal and organizational standards and policies, namely the latest revision of NIST SP 800-88, Guidelines for Media Sanitization</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="mp-6.2_prm_1">
+         <value>every 365 days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="mp-6.3_prm_1">
+         <value>Prior to initial use after purchase; When obtained from an unknown source; When the organization loses a positive chain of custody; and When device was connected to a lower assurance network/system based on FIPS 199 security categorization</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="mp-7_prm_1">
          <value>Prohibit</value>
@@ -817,11 +1489,26 @@
       <set-parameter class="ODP" param-id="pe-3_prm_9">
          <value>within every 365 days</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="pe-3.1_prm_1">
+         <value>defined physical spaces (defined in the applicable security and privacy plan) containing one or more components of the system</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-4_prm_1">
+         <value>defined system distribution and transmission lines</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-4_prm_2">
+         <value>defined security controls or safeguards (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-5_prm_1">
+         <value>defined output devices (in the applicable security and privacy plan)</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="pe-6_prm_1">
          <value>weekly (every 7 days)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pe-6_prm_2">
          <value>defined events or potential indications of events (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-6.4_prm_1">
+         <value>defined physical spaces (defined in the applicable security and privacy plan) containing one or more components of the system</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pe-8_prm_1">
          <value>two (2) years</value>
@@ -831,6 +1518,33 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="pe-8_prm_3">
          <value>defined personnel or roles (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-8.1_prm_1">
+         <value>automated mechanisms (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-10_prm_1">
+         <value>defined system or individual system components</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-10_prm_2">
+         <value>defined location by system or system component (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-11_prm_1">
+         <value>an orderly shutdown of the system and/or transition of the system to long-term alternate power</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-11.1_prm_1">
+         <value>manually and/or automatically</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-13.1_prm_1">
+         <value>defined personnel or roles (defined in the applicable security and privacy plan) and defined emergency responders (defined in the applicable security</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-13.1_prm_2">
+         <value>privacy plan or safety plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-13.2_prm_1">
+         <value>defined personnel or roles (defined in the applicable security and privacy plan) and defined emergency responders (defined in the applicable security</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-13.2_prm_2">
+         <value>privacy plan or safety plan)</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pe-14_prm_1">
          <value>temperature, humidity, pressure, and radiation</value>
@@ -844,8 +1558,23 @@
       <set-parameter class="ODP" param-id="pe-14_prm_4">
          <value>within the defined frequency (defined in the applicable security and privacy plan)</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="pe-15.1_prm_1">
+         <value>defined personnel or roles (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-15.1_prm_2">
+         <value>automated mechanisms</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="pe-16_prm_1">
          <value>defined types of system components (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-17_prm_1">
+         <value>alternate work sites (defined in the applicable security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-17_prm_2">
+         <value>defined in applicable security and privacy plans</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pe-18_prm_1">
+         <value>physical and environmental hazards</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pl-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -885,6 +1614,9 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="pl-4_prm_3">
          <value>every 365 days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pl-8_prm_1">
+         <value>at least every three (3) years</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pm-1_prm_1">
          <value>every 365 days</value>
@@ -994,6 +1726,15 @@
       <set-parameter class="ODP" param-id="ps-4_prm_2">
          <value>non-disclosure of information security and privacy information</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="ps-4.2_prm_1">
+         <value>automated mechanisms (defined in system security and privacy plan) to notify appropriate personnel or roles (defined in the applicable security and privacy plan, e.g. HR, Managers, Supervisors, COR, System Administrators, Physical Security Personnel) of individual termination actions; disable access</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ps-4.2_prm_2">
+         <value>system resources</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ps-4.2_prm_3">
+         <value>appropriate personnel or roles defined in the applicable security and privacy plan, e.g. HR, Managers, Supervisors, COR, System Administrators, Physical Security Personnel</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="ps-5_prm_1">
          <value>Re-issuing or confirming the need to continue to have/access appropriate information system-related property (e.g., keys, identification cards, building passes); Notifying security management; Closing obsolete accounts and establishing new accounts; and When an employee moves to a new position of trust, re-evaluating logical and physical access controls;</value>
       </set-parameter>
@@ -1022,7 +1763,7 @@
          <value>appropriate personnel or roles defined in the applicable security and privacy plan, e.g. HR, Managers, Supervisors, COR, Physical Security Personnel</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ps-8_prm_2">
-         <value>30 days</value>
+         <value>72 hours</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="pt-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -1044,6 +1785,45 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="pt-1_prm_7">
          <value>CMS-defined events (e.g. assessment or audit findings, security or privacy incidents, or changes in applicable laws, executive orders, directives, regulations, policies, standards, and guidelines)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-2_prm_1">
+         <value>relevant legal authority in applicable security/privacy plans</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-2_prm_2">
+         <value>collection, use, maintenance, and sharing</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-2_prm_3">
+         <value>minimum relevant and necessary elements</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-3_prm_1">
+         <value>CMS Mission defined purpose(s) in applicable system security and privacy plans</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-3_prm_2">
+         <value>CMS Mission defined processing</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-3_prm_3">
+         <value>CMS Mission defined mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-3_prm_4">
+         <value>CMS Mission defined requirements</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-4_prm_1">
+         <value>legally sufficient means</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-5_prm_1">
+         <value>at times prescribed by law</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-5_prm_2">
+         <value>Ability to access and have PII amended or corrected if and when necessary</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-6.1_prm_1">
+         <value>every 3 years</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-6.2_prm_1">
+         <value>every 3 years</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="pt-7_prm_1">
+         <value>processing conditions identified by the Authorizing Official, CISO, SOP, and in coordination with individual CMS information systems</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="ra-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -1102,6 +1882,21 @@
       <set-parameter class="ODP" param-id="ra-5.2_prm_2">
          <value>72 hours</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="ra-5.4_prm_1">
+         <value>appropriate corrective actions to limit discoverable system information</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ra-5.5_prm_1">
+         <value>system components, operating system, telecommunications, and configuration components</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ra-5.5_prm_2">
+         <value>defined vulnerability scanning activities to facilitate more thorough scanning</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ra-9_prm_1">
+         <value>systems, system components, or system services</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="ra-9_prm_2">
+         <value>decision points in the system development life cycle</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="sa-1_prm_1">
          <value>applicable personnel and roles</value>
       </set-parameter>
@@ -1132,6 +1927,18 @@
       <set-parameter class="ODP" param-id="sa-4_prm_2">
          <value>CMS defined contract language</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="sa-4.2_prm_1">
+         <value>[Selection (one or more): security-relevant external system interfaces; high-level design; low-level design; source code or hardware schematics]</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-4.2_prm_2">
+         <value>security-relevant external system interfaces , purpose and use of all such interfaces; source code or hardware schematics; and high-level design documentation</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-4.2_prm_3">
+         <value>sufficient detail to prove the security control implementation</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-4.5_prm_1">
+         <value>organizationally defined security configurations</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="sa-5_prm_1">
          <value>System documentation</value>
       </set-parameter>
@@ -1141,11 +1948,59 @@
       <set-parameter class="ODP" param-id="sa-8_prm_1">
          <value>Principles will remain consistent with the CMS Target Life Cycle, Technical Reference Architecture, and Technical Review Board processes defined by CMS</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="sa-8.33_prm_1">
+         <value>techniques defined by the CMS Privacy Office</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="sa-9_prm_1">
          <value>appropriate controls in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, standards, and guidance</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-9_prm_2">
          <value>processes, methods, and techniques defined in the applicable security and privacy plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-9.2_prm_1">
+         <value>as defined in the applicable system security plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-10_prm_1">
+         <value>: design; development; implementation; and operation</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-10_prm_2">
+         <value>defined in the applicable systems security plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-10_prm_3">
+         <value>as defined in the applicable system security plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-11_prm_1">
+         <value>unit; integration; system; regression</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-11_prm_2">
+         <value>CMS Target Life Cycle</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-11_prm_3">
+         <value>Annually</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-15_prm_1">
+         <value>Every 3 years</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-15_prm_2">
+         <value>System Acquisition and Configuration Management security controls</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-15.3_prm_1">
+         <value>Throughout the system development lifecycle as defined by CMS</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-15.3_prm_2">
+         <value>defined as a High Value Asset</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-16_prm_1">
+         <value>classroom-style training, web-based/computer-based training, and hands-on training</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-21_prm_1">
+         <value>information systems, system components, or information system services</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-21_prm_2">
+         <value>duties</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sa-21_prm_3">
+         <value>include clearances, background checks, citizenship, and nationality</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sa-22_prm_1">
          <value>in-house support</value>
@@ -1186,6 +2041,39 @@
       <set-parameter class="ODP" param-id="sc-7_prm_1">
          <value>logically</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="sc-7.4_prm_1">
+         <value>within every three hundred sixty-five (365) days or implementation of major new system</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-7.5_prm_1">
+         <value>at managed interfaces and/or for specific systems</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-7.5_prm_2">
+         <value>for specific systems</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-7.7_prm_1">
+         <value>defined security safeguards (i.e. the use of VPN for remote connections, sufficiently provisioned with appropriate security and privacy controls)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-7.8_prm_1">
+         <value>all user-initiated internal communications traffic</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-7.8_prm_2">
+         <value>untrusted external networks</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-7.21_prm_1">
+         <value>defined system components (defined in the applicable system security and privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-7.21_prm_2">
+         <value>CMS missions and/or business functions</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-8_prm_1">
+         <value>confidentiality and integrity</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-8.1_prm_1">
+         <value>prevent unauthorized disclosure of information and detect changes to information</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-10_prm_1">
+         <value>after 30 minutes</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="sc-12_prm_1">
          <value>defined by the System Security and Privacy plan</value>
       </set-parameter>
@@ -1197,6 +2085,30 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="sc-15_prm_1">
          <value>unless explicitly authorized, in writing, by the CMS CIO or his/her designated representative</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-17_prm_1">
+         <value>appropriate certificate policy</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-24_prm_1">
+         <value>a known state addresses security concerns in accordance with the mission and business needs of organizations</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-24_prm_2">
+         <value>confidentiality and integrity and availability</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-24_prm_3">
+         <value>organizational systems or components</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-28_prm_1">
+         <value>confidentiality; integrity</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-28_prm_2">
+         <value>the state of information when it is not in process or in transit and is located on system components</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-28.1_prm_1">
+         <value>with use of cryptographic mechanisms and file share scanning</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sc-28.1_prm_2">
+         <value>on components to include internal or external hard disk drives, storage area network devices, or database</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="si-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -1221,6 +2133,12 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="si-2_prm_1">
          <value>timeframe established in the system patch management plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-2.2_prm_1">
+         <value>automated mechanisms no less often than once every seventy-two</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-2.2_prm_2">
+         <value>hours</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="si-3_prm_1">
          <value>signature based and/or non-signature based</value>
@@ -1258,6 +2176,45 @@
       <set-parameter class="ODP" param-id="si-4_prm_6">
          <value>frequency defined in the applicable System Security and Privacy Plan</value>
       </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.4_prm_1">
+         <value>at a defined frequency (defined in the applicable System Security and Privacy Plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.4_prm_2">
+         <value>unusual or unauthorized activities or conditions</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.5_prm_1">
+         <value>personnel or roles defined in the applicable System Security and Privacy Plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.5_prm_2">
+         <value>Presence of malicious code; Unauthorized export of information; Signaling to an external information system; or Potential intrusions</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.10_prm_1">
+         <value>encrypted communications traffic</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.10_prm_2">
+         <value>defined system monitoring tools and mechanisms</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.12_prm_1">
+         <value>applicable personnel or roles</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.12_prm_2">
+         <value>automated mechanisms (defined in the applicable System Security and Privacy Plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.12_prm_3">
+         <value>CMS defined activities that trigger alerts</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.20_prm_1">
+         <value>e.g. audit record monitoring software, and network monitoring software</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.22_prm_1">
+         <value>CMS CIO or Authorizing Official as identified in the applicable System Security and Privacy Plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.22_prm_2">
+         <value>Audit and/or alert applicable personnel or roles (e.g. ISSO, CCIC as defined within the System Security and Privacy Plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-4.22_prm_3">
+         <value>applicable personnel or roles (e.g. ISSO, CCIC as defined within the System Security and Privacy Plan)</value>
+      </set-parameter>
       <set-parameter class="ODP" param-id="si-5_prm_1">
          <value>defined external organizations (including CISA, United States Computer Emergency Readiness Team (US-CERT) and organizations as defined in the applicable System Security and Privacy Plan))</value>
       </set-parameter>
@@ -1272,6 +2229,75 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="si-5_prm_5">
          <value>HHS</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-5.1_prm_1">
+         <value>CMS defined automated mechanisms (defined in applicable system security/privacy plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-6_prm_1">
+         <value>defined security and privacy functions (defined in the applicable System Security Plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-6_prm_2">
+         <value>upon system startup, restart, and upon command by a user with appropriate privileges no less often than once per month</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-6_prm_3">
+         <value>upon system startup, restart, and upon command by a user with appropriate privileges</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-6_prm_4">
+         <value>30 days</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-6_prm_5">
+         <value>the system administrators</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-6_prm_6">
+         <value>Shut the information system down, restarts the system, or performs some other defined alternative action(s) (defined in the applicable System Security and Privacy Plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-6_prm_7">
+         <value>performs some other alternative action(s) defined in the applicable System Security and Privacy Plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7_prm_1">
+         <value>parity checks, cyclical redundancy checks, cryptographic hashes</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7_prm_2">
+         <value>e.g., parity checks, cyclical redundancy checks, cryptographic hashes</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7.1_prm_1">
+         <value>software, firmware, and information: at startup and/or at transitional states or at security-relevant events; at least</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7.1_prm_2">
+         <value>quarterly</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7.1_prm_3">
+         <value>and/or at transitional states or at security-relevant events</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7.1_prm_4">
+         <value>quarterly</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7.2_prm_1">
+         <value>defined personnel or roles (defined in the applicable System Security Plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7.5_prm_1">
+         <value>One or more of the following safeguards must be implemented when integrity violations are discovered: (a) Shut the information system down; (b) Restart the information system; or (c) Implement security and/or privacy controls defined in the System Security and Privacy Plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7.5_prm_2">
+         <value>Implement security and/or privacy controls defined in the System Security and Privacy Plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7.7_prm_1">
+         <value>e.g. unauthorized changes to established CMS configuration settings or the unauthorized elevation of system privileges</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-7.15_prm_1">
+         <value>Encryption products must be validated under the Cryptographic Module Validation Program to confirm compliance with FIPS 140-2 in accordance with applicable federal laws, Executive Orders, directives, policies, regulations, and standards and Cryptographic mechanisms must be implemented in accordance with the HHS Standard for Encryption of Computing Devices and Information</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-8.2_prm_1">
+         <value>on a regular basis (as defined the System Security and Privacy Plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-10_prm_1">
+         <value>defined in the applicable System Security and Privacy Plan</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-11_prm_1">
+         <value>defined personnel or roles (defined in the applicable System Security and Privacy Plan)</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="si-16_prm_1">
+         <value>controls defined in applicable system security and privacy plan (e.g. data execution prevention controls). Implemented safeguards must be specified in the applicable system security and privacy plan</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sr-1_prm_1">
          <value>applicable personnel and roles</value>
@@ -1323,6 +2349,9 @@
       </set-parameter>
       <set-parameter class="ODP" param-id="sr-5_prm_1">
          <value>CMS-defined acquisition strategies, contract tools, and procurement methods; and Business/System-defined acquisition strategies, contract tools, and procurement methods</value>
+      </set-parameter>
+      <set-parameter class="ODP" param-id="sr-6_prm_1">
+         <value>every 365 days</value>
       </set-parameter>
       <set-parameter class="ODP" param-id="sr-8_prm_1">
          <value>notification of supply chain compromises, results of assessments or audits, and CMS information (defined in applicable security/privacy plans)</value>
