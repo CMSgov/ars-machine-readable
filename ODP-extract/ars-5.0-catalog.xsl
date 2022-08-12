@@ -8,6 +8,8 @@
 
     <!-- This transform expects -->
     <!-- https://raw.githubusercontent.com/usnistgov/oscal-content/main/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml -->
+    <!-- or -->
+    <!-- https://raw.githubusercontent.com/usnistgov/oscal-content/v1.0.0/nist.gov/SP800-53/rev5/xml/NIST_SP-800-53_rev5_catalog.xml --><!-- currently in use -->
     <!-- or the equivalent as input -->
 
     <xsl:include href="UTC.xsl" />
@@ -53,16 +55,19 @@
         </metadata>
     </xsl:template>
 
-    <xsl:template match="param[not(@id = parent::control/part[@name eq 'statement']//insert/@id-ref)]"><!-- useless faux ODPs --></xsl:template>
+    <xsl:template priority="-1" match="param[matches(@id, 'odp') and not(prop[@name eq 'alt-identifier'])]"><!-- ignore --></xsl:template>
 
-    <xsl:template match="param" priority="-1">
+    <xsl:template match="param[@id = (parent::control/param//insert/@id-ref, parent::control/part[@name eq 'statement']//insert/@id-ref)]">
         <xsl:copy>
             <xsl:choose>
                 <xsl:when test="prop[@name eq 'alt-identifier']">
                     <xsl:attribute name="id"
                         select="prop[@name eq 'alt-identifier'] (: use the first - oscal-content has duplicates/errors :)[1]/@value" />
-                </xsl:when>
+                    </xsl:when>
                 <xsl:otherwise>
+                    <xsl:if test="matches(@id, 'odp')">
+                        <xsl:message terminate="yes">{@id}</xsl:message>
+                    </xsl:if>
                     <xsl:copy-of select="attribute::id" />
                 </xsl:otherwise>
             </xsl:choose>
