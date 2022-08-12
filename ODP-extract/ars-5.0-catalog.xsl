@@ -63,9 +63,7 @@
                 <xsl:when test="prop[@name eq 'alt-identifier']">
                     <xsl:attribute name="id"
                         select="prop[@name eq 'alt-identifier'] (: use the first - oscal-content has duplicates/errors :)[1]/@value" />
-                    <xsl:message>{@id} becomes {prop[@name eq 'alt-identifier'] (: use the first - oscal-content has duplicates/errors
-                        :)[1]/@value}</xsl:message>
-                </xsl:when>
+                    </xsl:when>
                 <xsl:otherwise>
                     <xsl:if test="matches(@id, 'odp')">
                         <xsl:message terminate="yes">{@id}</xsl:message>
