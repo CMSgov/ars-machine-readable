@@ -56,7 +56,13 @@
                     [H01]:[m01]:[s01]Z')}. The transform used to produce the report was <code>{static-base-uri() ! tokenize(.,
                     '/')[last()]}</code>.</p>
 
-                <p>The version of the <a href="{base-uri()}" target="_blank">ARS OSCAL catalog</a> used is {//metadata/version}.</p>
+                <p>The version of the ARS OSCAL catalog used is {//metadata/version}.</p>
+                <p>The version of the {$ODP-low//metadata/title} used is {$ODP-low//metadata/version}.</p>
+                <p>The version of the {$ODP-moderate//metadata/title} used is {$ODP-moderate//metadata/version}.</p>
+                <p>The version of the {$ODP-high//metadata/title} used is {$ODP-high//metadata/version}.</p>
+                <p>The version of the {$ODP-hva//metadata/title} used is {$ODP-hva//metadata/version}.</p>
+
+                <xsl:call-template name="ODP-template" />
 
                 <xsl:call-template name="ODP-detail" />
 
@@ -70,15 +76,111 @@
 
     </xsl:template>
 
+    <xsl:template name="ODP-template">
+
+        <h2>ODP Template</h2>
+
+        <p>The following table shows ODP values for Low {$BL}, Moderate {$BM}, High {$BH}, and HVA {$BV} baselines.</p>
+
+        <p>Control details are <a href="#ODP-detail">here</a>.</p>
+
+        <table class="template">
+            <caption>ODPs from ARS profiles</caption>
+
+            <colgroup>
+                <col style="width: 4%;" />
+                <col style="width: 4%;" />
+                <col style="width: 4%;" />
+                <col style="width: 20%;" />
+                <col style="width: 15%;" />
+                <col style="width: 15%;" />
+                <col style="width: 15%;" />
+                <col style="width: 15%;" />
+            </colgroup>
+
+            <thead>
+                <tr>
+                    <th colspan="4" class="center">NIST SP 800-53rev5 OSCAL Catalog Origin</th>
+                    <th colspan="4" class="center">Defined Baseline Values</th>
+                </tr>
+                <tr>
+                    <th class="center">Control<br>Label</br></th>
+                    <th class="center">Baselines</th>
+                    <th class="center">ODP ID</th>
+                    <th class="center">ODP "Label"</th>
+                    <th class="center">Low</th>
+                    <th class="center">Moderate</th>
+                    <th class="center">High</th>
+                    <th class="center">HVA</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <xsl:for-each select="//control[@id = ($ODP-low//with-id, $ODP-moderate//with-id, $ODP-high//with-id, $ODP-hva//with-id)]">
+                    <xsl:sort order="ascending" select="current()/prop[@name eq sort-id]/@value" />
+
+                    <xsl:variable name="control" as="element()" select="." />
+
+                    <xsl:for-each select="param">
+                        <xsl:choose>
+                            <xsl:when test="position() eq 1">
+                                <tr>
+                                    <td class="center" rowspan="{last()}">
+                                        <a href="#{$control/@id}">{$control/prop[@name eq 'label'][not(@class)]/@value}</a>
+                                    </td>
+                                    <td class="center" rowspan="{last()}">
+                                        <div>
+                                            <xsl:if test="parent::control/@id = $ODP-low//with-id">{$BL}</xsl:if>
+                                            <xsl:if test="parent::control/@id = $ODP-moderate//with-id">{$BM}</xsl:if>
+                                            <xsl:if test="parent::control/@id = $ODP-high//with-id">{$BH}</xsl:if>
+                                            <xsl:if test="parent::control/@id = $ODP-hva//with-id">{$BV}</xsl:if>
+                                        </div>
+                                    </td>
+                                    <td class="center">
+                                        <span class="id">{@id}</span>
+                                    </td>
+                                    <td>
+                                        <xsl:apply-templates mode="param" select="." />
+                                    </td>
+                                    <td>{$ODP-low//set-parameter[@param-id eq current()/@id]/value}</td>
+                                    <td>{$ODP-moderate//set-parameter[@param-id eq current()/@id]/value}</td>
+                                    <td>{$ODP-high//set-parameter[@param-id eq current()/@id]/value}</td>
+                                    <td>{$ODP-hva//set-parameter[@param-id eq current()/@id]/value}</td>
+                                </tr>
+                            </xsl:when>
+                            <xsl:otherwise>
+                                <tr>
+                                    <td class="center">
+                                        <span class="id">{@id}</span>
+                                    </td>
+                                    <td>
+                                        <xsl:apply-templates mode="param" select="." />
+                                    </td>
+                                    <td>{$ODP-low//set-parameter[@param-id eq current()/@id]/value}</td>
+                                    <td>{$ODP-moderate//set-parameter[@param-id eq current()/@id]/value}</td>
+                                    <td>{$ODP-high//set-parameter[@param-id eq current()/@id]/value}</td>
+                                    <td>{$ODP-hva//set-parameter[@param-id eq current()/@id]/value}</td>
+                                </tr>
+                            </xsl:otherwise>
+                        </xsl:choose>
+
+                    </xsl:for-each>
+
+                </xsl:for-each>
+            </tbody>
+
+        </table>
+
+    </xsl:template>
+
     <xsl:template name="ODP-detail">
 
-        <h2 id="ODP-detail">ARS ODPs</h2>
+        <h2 id="ODP-detail">ARS ODPs in situ</h2>
 
         <p>The following table shows ARS OSCAL catalog controls which appear in baselines (there are {count(//control[@id = $ODP-high//with-id])}
             controls and control enhancements).</p>
 
-        <p>The ⬇ symbol appears when ODPs are either undefined or vary by baseline. Click on the ODP too see the baseline values. (Tabbing within the
-            document will land on these <code>details</code> elements.)</p>
+        <p>The ⬇ symbol appears when ODPs lack definition or vary by baseline. Click on the ODP too see the baseline values.</p>
 
         <p>A single value is displayed when all baseline values are
             identical.<!--The ≡ symbol appears when ODP values are invariant within the baselines.--></p>
@@ -216,6 +318,7 @@
         <xsl:variable name="vl" as="xs:string*" select="$ODP-low//set-parameter[@param-id eq $id]" />
         <xsl:variable name="vm" as="xs:string*" select="$ODP-moderate//set-parameter[@param-id eq $id]" />
         <xsl:variable name="vh" as="xs:string*" select="$ODP-high//set-parameter[@param-id eq $id]" />
+        <xsl:variable name="vv" as="xs:string*" select="$ODP-hva//set-parameter[@param-id eq $id]" />
 
         <xsl:choose>
             <xsl:when test="@type eq 'param'">
@@ -228,7 +331,7 @@
                     <xsl:when test="$show-tailored-ODPs">
 
                         <xsl:choose>
-                            <xsl:when test="$vl and $vm and $vh and ($vm eq $vl and $vh eq $vl)">
+                            <xsl:when test="$vl and $vm and $vh and $vv and ($vm eq $vl and $vh eq $vl and $vv eq $vl)">
                                 <!--<xsl:text>≡</xsl:text>-->
                                 <xsl:if test="$show-ODP-id">
                                     <span class="superscript-identifier">
@@ -237,7 +340,7 @@
                                 </xsl:if>
                                 <span class="ODP">{$vl}</span>
                             </xsl:when>
-                            <xsl:when test="not($vl) and $vm and $vh and ($vh eq $vm)">
+                            <xsl:when test="not($vl) and $vm and $vh and $vv and ($vh eq $vm and $vv eq $vm)">
                                 <xsl:if test="$show-ODP-id">
                                     <span class="superscript-identifier">
                                         <xsl:value-of select="@id-ref" />
@@ -245,13 +348,21 @@
                                 </xsl:if>
                                 <span class="ODP">{$vm}</span>
                             </xsl:when>
-                            <xsl:when test="not($vl) and not($vm) and $vh">
+                            <xsl:when test="not($vl) and not($vm) and $vh and ($vv eq $vh)">
                                 <xsl:if test="$show-ODP-id">
                                     <span class="superscript-identifier">
                                         <xsl:value-of select="@id-ref" />
                                     </span>
                                 </xsl:if>
                                 <span class="ODP">{$vh}</span>
+                            </xsl:when>
+                            <xsl:when test="not($vl) and not($vm) and not($vh) and ($vv)">
+                                <xsl:if test="$show-ODP-id">
+                                    <span class="superscript-identifier">
+                                        <xsl:value-of select="@id-ref" />
+                                    </span>
+                                </xsl:if>
+                                <span class="ODP">{$vv}</span>
                             </xsl:when>
                             <xsl:otherwise>
                                 <details class="ODPs">
@@ -284,6 +395,14 @@
                                             </xsl:when>
                                             <xsl:otherwise>
                                                 <xsl:text>{$BH}: (Not defined)</xsl:text>
+                                            </xsl:otherwise>
+                                        </xsl:choose>
+                                        <xsl:choose>
+                                            <xsl:when test="$ODP-hva//set-parameter[@param-id eq $id]">
+                                                <xsl:text>{$BV}: {$ODP-hva//set-parameter[@param-id eq $id]/value}</xsl:text>
+                                            </xsl:when>
+                                            <xsl:otherwise>
+                                                <xsl:text>{$BV}: (Not defined)</xsl:text>
                                             </xsl:otherwise>
                                         </xsl:choose>
                                     </xsl:variable>
