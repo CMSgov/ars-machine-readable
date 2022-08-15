@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <?xml-model href="https://github.com/usnistgov/OSCAL/raw/v1.0.4/xml/schema/oscal_complete_schema.xsd" schematypens="http://www.w3.org/2001/XMLSchema" title="OSCAL complete schema" ?>
-<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="ed639b1e-8e89-4b44-a1e8-dfc1acc9ad9b">
+<profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="39c86194-679b-419a-953b-b21f370b1f74">
     <metadata>
         <title>CMS ARS 5.0 HVA Profile</title>
-        <last-modified>2022-08-11T17:22:22Z</last-modified>
-        <version>2022-08-11T17:22:22Z</version>
+        <last-modified>2022-08-13T09:10:35Z</last-modified>
+        <version>2022-08-13T09:10:35Z</version>
         <oscal-version>1.0.4</oscal-version>
     </metadata>
     <import href="ars-5.0-catalog.xml">
@@ -207,6 +207,8 @@
             <with-id>ia-12.5</with-id>
             <with-id>ir-1</with-id>
             <with-id>ir-2</with-id>
+            <with-id>ir-2.1</with-id>
+            <with-id>ir-2.2</with-id>
             <with-id>ir-2.3</with-id>
             <with-id>ir-3</with-id>
             <with-id>ir-3.2</with-id>
@@ -399,6 +401,8 @@
             <with-id>sc-7.12</with-id>
             <with-id>sc-7.14</with-id>
             <with-id>sc-7.17</with-id>
+            <with-id>sc-7.18</with-id>
+            <with-id>sc-7.21</with-id>
             <with-id>sc-7.22</with-id>
             <with-id>sc-7.24</with-id>
             <with-id>sc-8</with-id>
