@@ -53,6 +53,9 @@
                     <import href="ars-5.0-catalog.xml">
                         <xsl:copy-of xpath-default-namespace="http://csrc.nist.gov/ns/oscal/1.0" select="$proto-profile//include-controls" />
                     </import>
+                    <merge>
+                        <as-is />
+                    </merge>
                     <modify>
                         <xsl:for-each select="$template//row">
                             <xsl:choose>

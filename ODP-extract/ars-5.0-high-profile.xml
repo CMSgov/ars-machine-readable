@@ -3,8 +3,8 @@
 <profile xmlns="http://csrc.nist.gov/ns/oscal/1.0" uuid="4122f533-2244-4670-ba18-b9fae759b9a1">
     <metadata>
         <title>CMS ARS 5.0 High Profile</title>
-        <last-modified>2022-08-26T17:10:12.718685Z</last-modified>
-        <version>2022-08-26T17:10:12.718685Z</version>
+        <last-modified>2022-09-01T08:55:23.32281Z</last-modified>
+        <version>2022-09-01T08:55:23.32281Z</version>
         <oscal-version>1.0.4</oscal-version>
     </metadata>
     <import href="ars-5.0-catalog.xml">
@@ -443,6 +443,9 @@
             <with-id>sr-12</with-id>
         </include-controls>
     </import>
+    <merge>
+        <as-is/>
+    </merge>
     <modify>
         <set-parameter class="ODP" param-id="ac-1_prm_1">
             <value>applicable personnel and roles</value>
