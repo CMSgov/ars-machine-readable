@@ -7,7 +7,7 @@
 
     <xsl:param name="show-tailored-ODPs" as="xs:boolean" required="false" select="true()" />
 
-    <xsl:param name="open-details" as="xs:boolean" required="false" select="true()" />
+    <xsl:param name="open-details" as="xs:boolean" required="false" select="false()" />
 
     <!--<xsl:mode on-no-match="shallow-skip" />-->
 
