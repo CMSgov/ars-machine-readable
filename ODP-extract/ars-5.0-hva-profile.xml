@@ -207,6 +207,8 @@
             <with-id>ia-12.5</with-id>
             <with-id>ir-1</with-id>
             <with-id>ir-2</with-id>
+            <with-id>ir-2.1</with-id>
+            <with-id>ir-2.2</with-id>
             <with-id>ir-2.3</with-id>
             <with-id>ir-3</with-id>
             <with-id>ir-3.2</with-id>
@@ -399,6 +401,8 @@
             <with-id>sc-7.12</with-id>
             <with-id>sc-7.14</with-id>
             <with-id>sc-7.17</with-id>
+            <with-id>sc-7.18</with-id>
+            <with-id>sc-7.21</with-id>
             <with-id>sc-7.22</with-id>
             <with-id>sc-7.24</with-id>
             <with-id>sc-8</with-id>

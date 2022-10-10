@@ -81,6 +81,8 @@
         <h2>ODP Template</h2>
 
         <p>The following table shows ODP values for Low {$BL}, Moderate {$BM}, High {$BH}, and HVA {$BV} baselines.</p>
+        
+        <p>ODPs with missing values appear as ❓.</p>
 
         <p>Control details are <a href="#ODP-detail">here</a>.</p>
 
@@ -122,6 +124,9 @@
                     <xsl:variable name="control" as="element()" select="." />
 
                     <xsl:for-each select="param">
+
+                        <xsl:variable name="param" as="element()" select="current()" />
+
                         <xsl:choose>
                             <xsl:when test="position() eq 1">
                                 <tr>
@@ -140,12 +145,33 @@
                                         <span class="id">{@id}</span>
                                     </td>
                                     <td>
-                                        <xsl:apply-templates mode="param" select="." />
+                                        <xsl:apply-templates mode="param" select="current()" />
                                     </td>
-                                    <td>{$ODP-low//set-parameter[@param-id eq current()/@id]/value}</td>
-                                    <td>{$ODP-moderate//set-parameter[@param-id eq current()/@id]/value}</td>
-                                    <td>{$ODP-high//set-parameter[@param-id eq current()/@id]/value}</td>
-                                    <td>{$ODP-hva//set-parameter[@param-id eq current()/@id]/value}</td>
+
+                                    <xsl:for-each select="$ODP-low, $ODP-moderate, $ODP-high, $ODP-hva">
+
+                                        <xsl:variable name="baseline" as="document-node()" select="current()" />
+
+                                        <td>
+                                            <xsl:if test="
+                                                    (: control is in baseline :)
+                                                    exists($baseline//with-id[. eq $control/@id])">
+                                                <xsl:choose>
+                                                    <xsl:when test="
+                                                            (: set-parameter is present :)
+                                                            exists($baseline//set-parameter[@param-id eq $param/@id])">
+                                                        <xsl:text>{$baseline//set-parameter[@param-id eq $param/@id]/value}</xsl:text>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:attribute name="class">center</xsl:attribute>
+                                                        <xsl:text>❓</xsl:text>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </xsl:if>
+                                        </td>
+
+                                    </xsl:for-each>
+
                                 </tr>
                             </xsl:when>
                             <xsl:otherwise>
@@ -156,10 +182,32 @@
                                     <td>
                                         <xsl:apply-templates mode="param" select="." />
                                     </td>
-                                    <td>{$ODP-low//set-parameter[@param-id eq current()/@id]/value}</td>
-                                    <td>{$ODP-moderate//set-parameter[@param-id eq current()/@id]/value}</td>
-                                    <td>{$ODP-high//set-parameter[@param-id eq current()/@id]/value}</td>
-                                    <td>{$ODP-hva//set-parameter[@param-id eq current()/@id]/value}</td>
+
+                                    <xsl:for-each select="$ODP-low, $ODP-moderate, $ODP-high, $ODP-hva">
+
+                                        <xsl:variable name="baseline" as="document-node()" select="current()" />
+
+                                        <td>
+                                            <xsl:if test="
+                                                    (: control is in baseline :)
+                                                    exists($baseline//with-id[. eq $control/@id])">
+                                                <xsl:choose>
+                                                    <xsl:when test="
+                                                            (: set-parameter is present :)
+                                                            exists($baseline//set-parameter[@param-id eq $param/@id])">
+                                                        <xsl:text>{$baseline//set-parameter[@param-id eq $param/@id]/value}</xsl:text>
+                                                    </xsl:when>
+                                                    <xsl:otherwise>
+                                                        <xsl:attribute name="class">center</xsl:attribute>
+                                                        <xsl:text>❓</xsl:text>
+                                                    </xsl:otherwise>
+                                                </xsl:choose>
+                                            </xsl:if>
+                                        </td>
+
+
+                                    </xsl:for-each>
+
                                 </tr>
                             </xsl:otherwise>
                         </xsl:choose>
@@ -177,8 +225,12 @@
 
         <h2 id="ODP-detail">ARS ODPs in situ</h2>
 
-        <p>The following table shows ARS OSCAL catalog controls which appear in baselines (there are {count(//control[@id = $ODP-high//with-id])}
+        <p>The following table shows ARS OSCAL catalog controls which appear in baselines (there are {count(//control[@id = $ODP-hva//with-id])}
             controls and control enhancements).</p>
+
+        <p>The Low {$BL}, Moderate {$BM}, High {$BH}, and HVA {$BV} baselines have {count(//control[@id = $ODP-low//with-id])}, {count(//control[@id =
+            $ODP-moderate//with-id])}, {count(//control[@id = $ODP-high//with-id])}, and {count(//control[@id = $ODP-hva//with-id])} controls
+            respectively.</p>
 
         <p>The ⬇ symbol appears when ODPs lack definition or vary by baseline. Click on the ODP too see the baseline values.</p>
 
