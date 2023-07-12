@@ -1,0 +1,2 @@
+# source path|source format|source model|target formats
+src/catalogs/ars/xml/*profile.xml|xml|profile|json
